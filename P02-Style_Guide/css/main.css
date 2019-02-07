@@ -9,13 +9,34 @@ Default styling for the style guide
 
 .sidenav {
   height: 100%;
-  width: 18rem;
+  width: 10rem;
   /* position: fixed; */
   z-index: 1;
   top: 0;
   left: 0;
   overflow-x: hidden;
   padding-top: 2rem;
+}
+
+.sidenav nav a {
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+  color: rgb(95, 158, 160);
+  text-decoration: none;
+  margin-right: 5rem;
+  font-weight: bold;
+  font-size: 1rem;
+  display: block;
+}
+
+.nav-mobile {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fff;
+    height: 5em;
+    width: 5em;
 }
 
 body {
@@ -35,6 +56,7 @@ nav a {
   font-weight: bold;
   font-size: 1rem;
   display: inline-block;
+
 }
 
 nav a:hover, nav a:focus {
