@@ -238,16 +238,7 @@ nav a:hover, nav a:focus {
   }
 
 }
-@media (max-width: 59rem) {
-  /* .footer-col {
-  width: 100%;
-  padding: 0.5rem 1rem 0.5rem 1rem;
-}
 
-.flex-grid-footer {
-display: block;
-} */
-}
 #nav-toggle {
   position: absolute;
   left: 1em;

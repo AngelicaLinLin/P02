@@ -335,7 +335,7 @@ a.product {
 
 
 label {
-    
+
     white-space: nowrap;
 }
 /* Styling for the submit button */
@@ -675,9 +675,6 @@ input[type=text] {
         padding-left: 3em;
         padding-right: 3em;
     }
-}
-
-@media (max-width:58.33em) {
     #detailed-product-content img {
         width: 350px;
         height: auto;
@@ -687,7 +684,7 @@ input[type=text] {
 
 
 
-/* 
+/*
   COMBINED ELEMENTS -------------------
 */
 
@@ -1239,42 +1236,42 @@ iframe {
     flex: 1 0 10%;
     max-width: 300px;
 
-    
+
 
 }
 
 .product-content {
-    padding-left: 14em;
-    padding-right: 14em;
+    padding-left: 5em;
+    padding-right: 5em;
 }
 
-
+/*
 @media (max-width:77em) {
     .product-content {
-        padding-left: 8em;
-        padding-right: 8em;
+        padding-left: 4em;
+        padding-right: 4em;
     }
-}
+} */
 
-@media (max-width:70em) {
+/* @media (max-width:70em) {
     .product-content {
-        padding-left: 6em;
-        padding-right: 6em;
+        padding-left: 3em;
+        padding-right: 3em;
     }
-}
+} */
 
-@media (max-width:46em) {
+/* @media (max-width:46em) {
     .product-content {
         padding-left: 2em;
         padding-right: 2em;
     }
-}
+} */
 
 
 
 
 @media (max-width: 35.563em) {
-    .product-content .col {
+    .product-content  {
         width: 100%;
         height: auto;
         margin: 0 0 3em 0;
@@ -1298,7 +1295,7 @@ iframe {
     }
 }
 
-@media (max-width:50em) {
+/* @media (max-width:50em) {
     .responsive-product .flex-grid {
         display: block;
     }
@@ -1310,7 +1307,7 @@ iframe {
     .product-listing img {
         width: 60%;
     }
-}
+} */
 
 @media (max-width:50em) {
     p {
@@ -1322,13 +1319,13 @@ iframe {
     width: 60%;
     height: auto;
 }
-
+/*
 @media (max-width: 30rem) {
     .swatch {
         width: 90%;
         height: auto;
     }
-}
+} */
 
 /* width of the quantity bar in product listing */
 select {
