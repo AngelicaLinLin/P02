@@ -1,10 +1,21 @@
 /*
-  STYLE GUIDE STYLING
-  Default styling for the style guide
+STYLE GUIDE STYLING
+Default styling for the style guide
 */
 *, *::after, *::before {
   margin: 0;
   box-sizing: border-box;
+}
+
+.sidenav {
+  height: 100%;
+  width: 18rem;
+  /* position: fixed; */
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  padding-top: 2rem;
 }
 
 body {
@@ -80,7 +91,7 @@ code {
 }
 
 /*
-  INTERACTIVE ELEMENTS -------------------
+INTERACTIVE ELEMENTS -------------------
 */
 
 /* Styling for the navigation button */
@@ -104,31 +115,31 @@ button {
 .reset-button {
   display: inline-block;
   padding: 0.5rem;
-	color: white;
-	background-color: rgb(203, 184, 152);
-	text-decoration: none;
+  color: white;
+  background-color: rgb(203, 184, 152);
+  text-decoration: none;
   transition-property: background-color;
-	transition-duration: 0.5s;
+  transition-duration: 0.5s;
 }
 
 .reset-button:hover, .reset-button:active, .reset-button:focus {
-	background-color: rgb(173,216,230);
-	border-radius: 0.4rem;
+  background-color: rgb(173,216,230);
+  border-radius: 0.4rem;
 }
 
 .submit-button{
   display: inline-block;
   padding: 0.5rem;
-	color: white;
-	background-color: rgb(176, 196, 222);
-	text-decoration: none;
+  color: white;
+  background-color: rgb(176, 196, 222);
+  text-decoration: none;
   transition-property: background-color;
-	transition-duration: 0.5s;
+  transition-duration: 0.5s;
 }
 
 .submit-button:hover, .submit-button:active, .submit-button:focus {
-	background-color: rgb(173,216,230);
-	border-radius: 0.4rem;
+  background-color: rgb(173,216,230);
+  border-radius: 0.4rem;
 }
 
 .image_link {
@@ -176,4 +187,50 @@ div {
 
 .checkout-content {
   display: block;
+}
+
+#nav-toggle {
+  position: absolute;
+  left: 1em;
+  top: 1.3em;
+  cursor: pointer;
+  padding: 0.8em 2.917em 1.33em 0em;
+}
+
+#nav-toggle span,
+#nav-toggle span:before,
+#nav-toggle span:after {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 0.35em;
+  width: 2.4em;
+  background: #463f3f;
+  position: absolute;
+  display: block;
+  content: '';
+  transition: all 300ms ease-in-out;
+}
+
+#nav-toggle span:before {
+  top: -10px;
+}
+
+#nav-toggle span:after {
+  bottom: -10px;
+}
+
+#nav-toggle.active span {
+  background-color: transparent;
+}
+
+#nav-toggle.active span:before, #nav-toggle.active span:after {
+  top: 0;
+}
+
+#nav-toggle.active span:before {
+  transform: rotate(45deg);
+}
+
+#nav-toggle.active span:after {
+  transform: rotate(-45deg);
 }
