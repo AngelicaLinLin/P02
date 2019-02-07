@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/main1.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="js/nav.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <title>Shop</title>
+</head>
+<body>
+    <h1 id="logo"> CON+FORT</h1>
+
+    <div class="sidenav">
+        <nav>
+            <div class="nav-mobile">
+                <a id="nav-toggle"><span></span></a>
+            </div>
+            <ul class="nav-list">
+
+                <a href="home.html">Home</a>
+                <a href="productAll.html">Shop</a>
+                <a href="event.html">Event</a>
+                <a href="about.html">About</a>
+                <a href="about.html">Contact</a>
+            </ul>
+        </nav>
+    </div>
+
+    <section class="product-content">
+
+        <div class="flex-grid">
+            <div class="col">
+                <a class="in-text-link" href="product1.html">
+                    <img src="img/1.jpg" alt="MENSWEAR COA ">
+                </a>
+
+            </div>
+            <div class="col">
+                <a class="in-text-link" href="product-page-2.html">
+                    <img src="img/p2.jpg" alt="MENSWEAR COA">
+                </a>
+
+            </div>
+            <div class="col">
+                <a class="in-text-link" href="product-page.html">
+                    <img src="img/p3.jpg" alt="MENSWEAR COA">
+                </a>
+
+            </div>
+
+
+            <div class="col">
+                <a class="in-text-link" href="product-page-2.html">
+                    <img src="img/p4.jpg" alt="MENSWEAR COA">
+                </a>
+
+            </div>
+            <div class="col">
+                <a class="in-text-link" href="product-page-2.html">
+                    <img src="img/p4.jpg" alt="MENSWEAR COA">
+                </a>
+
+            </div>
+            <div class="col">
+                <a class="in-text-link" href="product-page-2.html">
+                    <img src="img/p4.jpg" alt="MENSWEAR COA">
+                </a>
+
+            </div>
+
+
+            <div class="col">
+                <a class="in-text-link" href="product-page.html">
+                    <img src="img/p5.jpg" alt="MENSWEAR COA">
+                </a>
+
+            </div>
+            <div class="col">
+                <a class="in-text-link" href="product-page-2.html">
+                    <img src="img/p6.jpg" alt="MENSWEAR COA">
+                </a>
+
+            </div>
+            <div class="col">
+                <a class="in-text-link" href="product-page-2.html">
+                    <img src="img/p7.jpg" alt="MENSWEAR COA">
+                </a>
+
+            </div>
+            <div class="col">
+                <a class="in-text-link" href="product-page-2.html">
+                    <img src="img/p8.jpg" alt="MENSWEAR COA">
+                </a>
+
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>copyright &copy; 2019. Con+Fort. all rights reserved.</p>
+        <p>
+            <a class="in-text-link" href="styleguide.html">StyleGuide</a>
+            <a class="in-text-link" href="citation.html">Citations</a>
+            <a class="in-text-link" href="https://gitlab1.its.sfu.ca/iat339-2018-summer/p02-lab201-group2">GitHub</a>
+        </p>
+    </footer>
+    <!--    https://www.w3schools.com/howto/howto_js_media_queries.asp -->
+    <script>
+function myFunction(x) {
+    if (x.matches) { // If media query matches
+            $('nav ul').hide();
+    }
+    else {
+        $('nav ul').show();
+    }
+}
+var x = window.matchMedia("(max-width: 35.563em)")
+myFunction(x) // Call listener function at run time
+x.addListener(myFunction) // Attach listener function on state changes</script>
+</body>
+</html>

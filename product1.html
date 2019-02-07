@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+    <title>Product Listing</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <link href="css/main1.css" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="js/nav.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+</head>
+<body>
+    <h1 id="logo"> CON+FORT</h1>
+
+    <div class="sidenav">
+        <nav>
+            <div class="nav-mobile">
+                <a id="nav-toggle"><span></span></a>
+            </div>
+            <ul class="nav-list">
+
+                <a href="home.html">Home</a>
+                <a href="productAll.html">Shop</a>
+                <a href="event.html">Event</a>
+                <a href="about.html">About</a>
+                <a href="about.html">Contact</a>
+            </ul>
+        </nav>
+    </div>
+
+    <main>
+        <div class="section section-gray">
+            <div class="section-content">
+                <div class="product-details">
+                    <ul class="product-images">
+                        <li class="preview">
+                            <img src="img/1.jpg" alt="MENSWEAR COAT">
+                        </li>
+                        <li class="preview"><a href="img/2.jpg"></a><img src="img/2.jpg" alt="MENSWEAR COAT"></li>
+                        <li class="preview"><a href="img/3.jpg"></a><img src="img/3.jpg" alt="MENSWEAR COAT"></li>
+                    </ul>
+                    <ul class="product-info">
+                        <li class="product-name">MENSWEAR COAT</li>
+                        <li class="product-price"><span>199.00</span><span>CA</span></li>
+                        <li class="product-description">
+                            <p>
+                                Coat with lapel collar and long sleeves. Front patch pockets. Front double breasted closure with contrasting buttons.
+                            </p>
+
+                        </li>
+                        <li class="product-attributes">
+                            <div class="field-name">Color:</div>
+                            <label>
+                                <input type="radio" name="color"> Gray
+                            </label>
+                            <label>
+                                <input type="radio" name="color"> Black
+                            </label>
+
+                            <div class="field-name">Size:</div>
+                            <label>
+                                <input type="radio" name="size"> Kids
+                            </label>
+                            <label>
+                                <input type="radio" name="size"> Adults
+                            </label>
+                        </li>
+                        <li class="product-addtocart">
+                            <button>Add To Cart</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="section-title"><h2>Check Out More Coats</h2></div>
+            <div class="section-content">
+                <ul class="product-list">
+                    <li>
+                        <a href="javascript:void(0)" class="product">
+                            <div class="product-image"><img src="img/p8.jpg" alt="MENSWEAR COAT"></div>
+                            <div class="product-name">LEATHER JACKET</div>
+                            <div class="product-price"><span>$</span><span>199.00</span></div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <footer>
+            <p>copyright &copy; 2019. Con+Fort. all rights reserved.</p>
+            <p>
+                <a class="in-text-link" href="styleguide.html">StyleGuide</a>
+                <a class="in-text-link" href="citation.html">Citations</a>
+                <a class="in-text-link" href="https://gitlab1.its.sfu.ca/iat339-2018-summer/p02-lab201-group2">GitHub</a>
+            </p>
+        </footer>
+        <!--    https://www.w3schools.com/howto/howto_js_media_queries.asp -->
+        <script>
+function myFunction(x) {
+    if (x.matches) { // If media query matches
+            $('nav ul').hide();
+    }
+    else {
+        $('nav ul').show();
+    }
+}
+var x = window.matchMedia("(max-width: 35.563em)")
+myFunction(x) // Call listener function at run time
+x.addListener(myFunction) // Attach listener function on state changes</script>
+    </main>
+
+</body>
+</html>
