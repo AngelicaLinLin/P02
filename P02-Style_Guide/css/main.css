@@ -29,7 +29,7 @@ Default styling for the style guide
   display: block;
 }
 
-.nav-mobile {
+/* .nav-mobile {
     display: none;
     position: absolute;
     top: 0;
@@ -37,7 +37,7 @@ Default styling for the style guide
     background: #fff;
     height: 5em;
     width: 5em;
-}
+} */
 
 body {
   font-family: 'Thasadith', sans-serif;
