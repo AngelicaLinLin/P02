@@ -2,43 +2,41 @@
 <html lang="en">
 
 <head>
-
-  <meta charset="utf-8">
-  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-  <title>CON+FORT</title>
-
-  <link href="css/main.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Thasadith" rel="stylesheet">
-
-
+    <meta charset="utf-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>CON+FORT</title>
+    <link href="css/main.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Thasadith" rel="stylesheet">
+    <!--<link href="../css/main1.css" rel="stylesheet">-->
+   <link href="../css/main.css" rel="stylesheet">
 </head>
 
 <body>
 
-  <header>
-    <h1>CON+FORT</h1>
+    <header>
+        <h1>CON+FORT</h1>
 
-    <p>A template you can use to start building out your own style guides with.</p>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#interactive_elements">Interactive Elements</a>
+            <a href="#text_elements">Text Elements</a>
+            <a href="#combined_elements">Combined Elements</a>
+            <a href="#branding_ideas">Branding Ideas</a>
+            <a href="#brand_components">Brand components</a>
+            <a href="../product1.html">Product Listing Template</a>
+            <a href="../checkout.html">Checkout Template</a>
+            <a href="#citations">Citations</a>
+        </nav>
 
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="#interactive_elements">Interactive Elements</a>
-      <a href="#text_elements">Text Elements</a>
-      <a href="#combined_elements">Combined Elements</a>
-      <a href="#branding_ideas">Branding Ideas</a>
-      <a href="#brand_components">Brand components</a>
-      <a href="product.html">Product Listing Template</a>
-      <a href="checkout.html">Checkout Template</a>
-      <a href="#citations">Citations</a>
-    </nav>
-  </header>
+    </header>
 
   <!--CITATIONS: TEXT:https://en.wikipedia.org/wiki/Simon_Fraser_University
   TUTORIALS:https://www.w3schools.com/html/html_links.asp-->
   <!-- INTERACTIVE ELEMENTS SECTION // -->
   <section id="interactive_elements">
-    <h2>Interactive Elements</h2>
 
+     <p>A template you can use to start building out your own style guides with.</p>
+    <h2>Interactive Elements</h2>
 
     <section class="element">
       <h3>In-text link</h3>
@@ -185,28 +183,55 @@
 
   <!-- COMBINED ELEMENTS SECTION // -->
   <section id="combined_elements">
-    <h2>Combined Elements</h2>
+      <h2>Combined Elements</h2>
+      <section class="element">
+          <h3>Main Navigation</h3>
 
-    <section class="element">
-      <h3>Main Navigation</h3>
-      <nav>
-        <a href="#interactive_elements">CON + FORT</a>
-        <a href="#interactive_elements">CLOTHING</a>
-        <a href="#interactive_elements">ACCESSORIES</a>
-        <a href="#interactive_elements">SHOES</a>
-        <a href="#interactive_elements">FEATURED</a>
-
-      </nav>
-    </section>
-
-    <section class="element">
-      <h3 id = "product_listing">Product Listing</h3>
-      <img src="img/TShirt_Black.jpg" alt="Black T-shirt" >
-      <p>TSHIRT 1064</p>
-      <p>Price: $32</p>
-    </section>
-
-  </section>
+      </section>
+      <section class="element">
+          <h3 id="product_listing">Product Listing</h3>
+          <div class="section section-gray">
+              <div class="section-content">
+                  <div class="product-details">
+                      <ul class="product-images">
+                          <li class="preview">
+                              <img src="../img/1.jpg" alt="MENSWEAR COAT">
+                          </li>
+                          <li class="preview"><a href="../img/2.jpg"></a><img src="../img/2.jpg" alt="MENSWEAR COAT"></li>
+                          <li class="preview"><a href="../img/3.jpg"></a><img src="../img/3.jpg" alt="MENSWEAR COAT"></li>
+                      </ul>
+                      <ul class="product-info">
+                          <li class="product-name">MENSWEAR COAT</li>
+                          <li class="product-price"><span>199.00</span><span>CA</span></li>
+                          <li class="product-description">
+                              <p>
+                                  Coat with lapel collar and long sleeves. Front patch pockets. Front double breasted closure with contrasting buttons.
+                              </p>
+                          </li>
+                          <li class="product-attributes">
+                              <div class="field-name">Color:</div>
+                              <label>
+                                  <input type="radio" name="color"> Gray
+                              </label>
+                              <label>
+                                  <input type="radio" name="color"> Black
+                              </label>
+                              <div class="field-name">Size:</div>
+                              <label>
+                                  <input type="radio" name="size"> Kids
+                              </label>
+                              <label>
+                                  <input type="radio" name="size"> Adults
+                              </label>
+                          </li>
+                          <li class="product-addtocart">
+                              <button>Add To Cart</button>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </section>
   <!-- // COMBINED ELEMENTS SECTION -->
 
   <section id="branding_ideas">
