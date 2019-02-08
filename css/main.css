@@ -16,7 +16,6 @@ a {
 }
 
     a:hover {
-        color: pink;
         text-decoration: underline;
     }
 
@@ -262,19 +261,19 @@ main .section {
     }
 }
 
-.product-details .product-info .product-addtocart button {
-    width: 100%;
-    cursor: pointer;
-    background: #000;
-    color: #fff;
-    display: block;
-    border: none;
-    outline: none;
-    padding: 10px;
+ button, .submit-button {
+  display: inline-block;
+  padding: 0.5rem;
+  color: white;
+  background-color: rgb(176, 196, 222);
+  text-decoration: none;
+  transition-property: background-color;
+  transition-duration: 0.5s;
 }
 
-    .product-details .product-info .product-addtocart button:hover {
-        background: #1a1a1a;
+ button:hover, button:active, .submit-button:hover, .submit-button:active {
+      background-color: rgb(173,216,230);
+      border-radius: 0.4rem;
     }
 
 .product-details .product-info .product-description {
@@ -339,7 +338,7 @@ label {
     white-space: nowrap;
 }
 /* Styling for the submit button */
-.submit-button {
+/* .submit-button {
     background-color: rgb(134,206,193);
     display: inline-block;
     text-decoration: none;
@@ -349,13 +348,13 @@ label {
     margin-top:1rem;
 
 
-}
+} */
 
-    .submit-button:hover, .submit-button:focus {
+    /* .submit-button:hover, .submit-button:focus {
         text-decoration: none;
         background-color: rgb(34,34,34);
         color: rgb(255,255,255);
-    }
+    } */
 
 @media (max-width: 35.563em) {
     #detailed-product-content .submit-button {
@@ -440,15 +439,7 @@ input[type=text] {
         padding-right: 1em;
     }
 
-    .discover-content .submit-button:hover {
-        cursor: pointer;
-    }
 
-    .discover-content .submit-button {
-        width: 13em;
-        height: auto;
-        text-align: center;
-    }
 
     .discover-content .col {
         padding-bottom: 1em;
@@ -715,7 +706,7 @@ nav {
             }
 
                 nav ul li a:hover, a:focus {
-                    color: rgb(134,206,193);
+                    color: rgb(0,0,0);
                 }
 
     nav a::before {
@@ -1233,11 +1224,8 @@ iframe {
 }
 
 .col {
-    flex: 1 0 10%;
+    flex: 1 0 30%;
     max-width: 300px;
-
-
-
 }
 
 .product-content {
