@@ -1,0 +1,118 @@
+
+<!Doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Checkout</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Page specific css -->
+    <link href="css/checkout.css" rel="stylesheet" type="text/css">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <link href="css/main1.css" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="js/nav.js"></script>
+
+</head>
+<body>
+    <!-- navigation bar for switching between different pages, i.e. styleguide, product listing pages -->
+    <h1 id="logo"> CON+FORT</h1>
+
+    <div class="sidenav">
+        <nav>
+            <div class="nav-mobile">
+                <a id="nav-toggle"><span></span></a>
+            </div>
+            <ul class="nav-list">
+
+                <a href="home.html">Home</a>
+                <a href="productAll.html">Shop</a>
+                <a href="event.html">Event</a>
+                <a href="checkout.html">Checkout</a>
+                <a href="about.html">About</a>
+                <a href="about.html">Contact</a>
+            </ul>
+        </nav>
+    </div>
+
+    <main class="checkoutCon">
+        <section class="checkout_items">
+            <h2> CHECKOUT CART </h2>
+
+            <div class="item">
+                <!-- first flex item -->
+                <div class=" imagedisplay"></div>
+                <!-- Second flex item -->
+                <div class="item_display">
+                    <h4 class="item_name">MENSWEAR COAT</h4>
+                    <div>
+                        <p><strong>Price:</strong> $199.00</p>
+                        <p><strong>Quantity:</strong> 1</p>
+                        <p><strong>Color(s):</strong> Red/Blue/Green </p>
+                        <p><strong>Size:</strong> M </p>
+                    </div>
+                    <div class="click">
+                        <a href="#Payment_Form" class="submit-button">Edit</a>
+                        <a href="#Payment_Form" class="submit-button">Delete</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <!-- first flex item -->
+                <div class=" imagedisplay1"></div>
+                <!-- Second flex item -->
+                <div class="item_display">
+                    <h4 class="item_name">LEATHER JACKET</h4>
+                    <div class="item_info">
+                        <p><strong>Price:</strong> $199.00</p>
+                        <p><strong>Quantity:</strong> 1</p>
+                        <p><strong>Color(s):</strong> Black </p>
+                        <p><strong>Size:</strong> M </p>
+                    </div>
+                    <div class="click">
+                        <a href="#Payment_Form" class="submit-button">Edit</a>
+                         <a href="#Payment_Form" class="submit-button">Delete</a>
+                </div>
+                </div>
+            </div>
+
+            <div class="pay">
+
+                <h3>Payment Form</h3>
+                <label for="Name">Name: </label><input type="text" name="Name" id="Name"><br />
+                <label for="Email">Email: </label><input type="text" name="Email" id="Email"><br />
+                <label for="Card_number"> Card number: </label><input type="text" name="Card_number" id="Card_number"><br />
+                <label for="Expiration_Date">Expiration Date: </label><input type="text" name="Expiration_Date" id="Expiration_Date" maxlength="4" size="4"><br />
+                <label for="CVV">CVV: </label><input type="text" name="CVV" id="CVV" maxlength="4" size="4"><br /><br />
+                <a href="#Payment_Form" class="submit-button">Submit</a>
+                <a href="#Payment_Form" class="submit-button">Cancel</a>
+
+
+            </div>
+        </section>
+        <footer>
+            <p>copyright &copy; 2019. Con+Fort. all rights reserved.</p>
+            <p>
+                <a class="in-text-link" href="P02-Style_Guide/index.html">StyleGuide</a>
+                <a class="in-text-link" href="citation.html">Citations</a>
+                <a class="in-text-link" href="https://github.com/AngelicaLinLin/P02">GitHub</a>
+            </p>
+        </footer>
+        <!--    https://www.w3schools.com/howto/howto_js_media_queries.asp -->
+        <script>
+function myFunction(x) {
+    if (x.matches) { // If media query matches
+            $('nav ul').hide();
+    }
+    else {
+        $('nav ul').show();
+    }
+}
+var x = window.matchMedia("(max-width: 35.563em)")
+myFunction(x) // Call listener function at run time
+x.addListener(myFunction) // Attach listener function on state changes</script>
+    </main>
+
+
+</body>
+</html>

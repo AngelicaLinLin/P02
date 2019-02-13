@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <title>CON+FORT</title>
+
+  <link href="css/main.css" rel="stylesheet" type="text/css">
+  <link href="css/main1.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Thasadith" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+</head>
+
+<body>
+
+  <!-- <header class="navigation"> -->
+  <h1 id="logo"> CON+FORT</h1>
+
+  <div class="sidenav">
+    <nav>
+      <div class="nav-mobile">
+        <a id="nav-toggle"><span></span></a>
+      </div>
+      <ul class="nav-list">
+
+        <a href="home.html">Home</a>
+        <a href="productAll.html">Shop</a>
+        <a href="event.html">Event</a>
+        <a href="checkout.html">Checkout</a>
+        <a href="about.html">About</a>
+        <a href="about.html">Contact</a>
+      </ul>
+    </nav>
+  </div>
+  <!-- </header> -->
+
+
+  <div class="main">
+    <section id="citations">
+
+      <h2>Citations</h2>
+
+      <ul>
+        <li>2018 Colour & Decor Trends. (n.d.). Retrieved from <a href="https://www.dulux.ca/diy/colour/2018-dulux-trends">https://www.dulux.ca/diy/colour/2018-dulux-trends</a>.</li>
+        <li>Google Fonts. (n.d.). Retrieved from <a href="https://fonts.google.com/specimen/Thasadith">https://fonts.google.com/specimen/Thasadith</a>.</li>
+        <li>Oak Fort Home. (n.d.). Retrieved from <a href="https://minimalissimo.com/oak-fort-home/">https://minimalissimo.com/oak-fort-home/</a>.</li>
+        <li>Resources for images: Oak Fort. (n.d.). Retrieved from  <a href="https://www.oakandfort.com/">https://www.oakandfort.com/</a>.</li>
+        <li>Simon Fraser UniversityEngaging the World. (n.d.). Retrieved from <a href="https://www.sfu.ca/">https://www.sfu.ca/</a>/</li>
+        <li>W3Schools. (n.d.). Retrieved from  <a href="https://www.w3schools.com">https://www.w3schools.com</a>.</li>
+      </ul>
+    </section>
+  </div>
+  <footer>
+    <p>copyright &copy; 2019. Con+Fort. all rights reserved.</p>
+    <p>
+      <a class="in-text-link" href="P02-Style_Guide/index.html">StyleGuide</a>
+      <a class="in-text-link" href="citation.html">Citations</a>
+      <a class="in-text-link" href="https://github.com/AngelicaLinLin/P02">GitHub</a>
+    </p>
+  </footer>
+  <!--    https://www.w3schools.com/howto/howto_js_media_queries.asp -->
+  <script>function myFunction(x) {
+    if (x.matches) { // If media query matches
+      $('nav ul').hide();
+    }
+    else {
+      $('nav ul').show();
+    }
+  }
+  var x = window.matchMedia("(max-width: 35.563em)")
+  myFunction(x) // Call listener function at run time
+  x.addListener(myFunction) // Attach listener function on state changes</script>
+
+</body>
+</html>
