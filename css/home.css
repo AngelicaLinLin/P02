@@ -146,13 +146,13 @@ nav a:hover, nav a:focus {
 }
 
 .container2 {
-  flex:1
+  flex:1;
   display: flex;
   max-width: 1000px;
 }
 
 .small-img {
-  max-width: 33%;
+  max-width: 100%;
   flex:1;
 
 }
