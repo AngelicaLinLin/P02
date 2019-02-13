@@ -22,7 +22,7 @@ body {
   padding-top: 2rem;
 }
 
-h1 {
+h1  {
   margin-left: 2rem;
   padding-left: 0.5rem;
   font-weight: bold;
@@ -128,6 +128,9 @@ nav a:hover, nav a:focus {
     margin-left:12rem;
     margin-right:0rem;
   }
+  /* #logo{
+    margin-left:1rem;
+  } */
 }
 
 .maincontainer {
@@ -184,10 +187,12 @@ nav a:hover, nav a:focus {
     @media only screen and (max-width: 35.563em) {
         #logo {
             margin-top: 5rem;
-            left: 0;
             position: absolute;
         }
-
+        h1 {
+          margin-left: 0.5rem;
+        }
+        
         .footer-bottom {
             position: static;
         }
