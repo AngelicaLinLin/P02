@@ -87,16 +87,7 @@ footer {
 }
 
 
-@media (max-width: 59rem) {
-    .footer-col {
-        width: 100%;
-        padding: 0.5rem 1rem 0.5rem 1rem;
-    }
 
-    .flex-grid-footer {
-        display: block;
-    }
-}
 
 
 nav {
@@ -130,6 +121,13 @@ nav a:hover, nav a:focus {
   margin-right: 10rem;
   /* width: 300px; */
   /* max-width: 70rem; */
+}
+
+@media(max-width: 800px){
+  .main{
+    margin-left:10rem;
+    margin-right:0rem;
+  }
 }
 
 .maincontainer {
@@ -181,117 +179,101 @@ nav a:hover, nav a:focus {
     width: 5em;
 }
 
-@media only screen and (max-width: 1150px) {
-  .small-img {
-    max-width: 48%;
-    flex:1;
-  }
-  .sidenav {
-
-  }
-  .main {
-    margin-left: 12rem;
-    margin-right: 0;
-  }
-
-}
 
 
+    @media only screen and (max-width: 35.563em) {
+        #logo {
+            margin-top: 5rem;
+            left: 0;
+            position: absolute;
+        }
 
-@media only screen and (max-width: 35.563em) {
-  #logo {
-    margin-top: 5rem;
-    left: 0;
-    position:absolute;
-  }
-  .footer-bottom {
-        position: static;
+        .footer-bottom {
+            position: static;
+        }
+
+
+        .flex-grid-footer {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 3rem 0 0 0;
+        }
+
+        .footer-col {
+            flex: 1;
+            padding: 0 0 0 6.5rem;
+        }
+
+        .nav-mobile {
+            display: block;
+        }
+
+        .sidenav {
+            height: 100%;
+            width: 18rem;
+            position: relative;
+        }
+
+        .main {
+            /* padding-left: 0; */
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+            .main .product-details .product-info {
+                width: 70%;
+                position: static;
+                margin-left: 20%;
+            }
+
+        nav {
+            width: 100%;
+            /* padding: 5em 0 1.25em; */
+        }
     }
 
-
-.flex-grid-footer {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 3rem 0 0 0;
-}
-
-.footer-col {
-    flex: 1;
-    padding: 0 0 0 6.5rem;
-}
-    .nav-mobile {
-        display: block;
-    }
-    .sidenav {
-      height: 100%;
-      width: 18rem;
-      position:relative;
-
-    }
-
-    .main {
-      /* padding-left: 0; */
-      margin-left: 0;
-      margin-right: 0;
-    }
-    nav {
-        width: 100%;
-        /* padding: 5em 0 1.25em; */
-    }
-
-}
-@media (max-width: 59rem) {
-    .footer-col {
-        width: 100%;
-        padding: 0.5rem 1rem 0.5rem 1rem;
-    }
-
-    .flex-grid-footer {
-        display: block;
-    }
-}
-#nav-toggle {
-    position: absolute;
-    left: 1em;
-    top: 1.3em;
-    cursor: pointer;
-    padding: 0.8em 2.917em 1.33em 0em;
-}
-
-    #nav-toggle span,
-    #nav-toggle span:before,
-    #nav-toggle span:after {
-        cursor: pointer;
-        border-radius: 1px;
-        height: 0.35em;
-        width: 2.4em;
-        background: #463f3f;
+    #nav-toggle {
         position: absolute;
-        display: block;
-        content: '';
-        transition: all 300ms ease-in-out;
+        left: 1em;
+        top: 1.3em;
+        cursor: pointer;
+        padding: 0.8em 2.917em 1.33em 0em;
     }
 
-        #nav-toggle span:before {
-            top: -10px;
-        }
-
+        #nav-toggle span,
+        #nav-toggle span:before,
         #nav-toggle span:after {
-            bottom: -10px;
+            cursor: pointer;
+            border-radius: 1px;
+            height: 0.35em;
+            width: 2.4em;
+            background: #463f3f;
+            position: absolute;
+            display: block;
+            content: '';
+            transition: all 300ms ease-in-out;
         }
 
-    #nav-toggle.active span {
-        background-color: transparent;
-    }
+            #nav-toggle span:before {
+                top: -10px;
+            }
 
-        #nav-toggle.active span:before, #nav-toggle.active span:after {
-            top: 0;
+            #nav-toggle span:after {
+                bottom: -10px;
+            }
+
+        #nav-toggle.active span {
+            background-color: transparent;
         }
 
-        #nav-toggle.active span:before {
-            transform: rotate(45deg);
-        }
+            #nav-toggle.active span:before, #nav-toggle.active span:after {
+                top: 0;
+            }
 
-        #nav-toggle.active span:after {
-            transform: rotate(-45deg);
-        }
+            #nav-toggle.active span:before {
+                transform: rotate(45deg);
+            }
+
+            #nav-toggle.active span:after {
+                transform: rotate(-45deg);
+            }
