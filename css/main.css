@@ -212,7 +212,7 @@ main .section {
         list-style: none;
     }
 
-        .product-details .product-images > li.preview {
+        .product-details .product-images > li {
             width: 100%;
             min-width: 200px
             height: auto;
@@ -770,7 +770,7 @@ main .section {
     .flex-grid {
         display: flex;
         flex-wrap: wrap;
-        margin-left:10%;
+        margin-left:5%;
 
     }
 
