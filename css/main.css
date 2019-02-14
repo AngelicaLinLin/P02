@@ -226,7 +226,7 @@ main .section {
 
 
     .product-details .product-info {
-        max-width: 24%;
+        max-width: 20%;
         list-style: none;
         /*margin-left: 30%;*/
         position: fixed;
@@ -238,7 +238,7 @@ main .section {
 @media(max-width:829px) {
     .product-details .product-info {
         /*margin-right:1rem;*/
-        margin-left: 1rem;
+        margin-right: 1rem;
         max-width: 550%;
         position: static;
 
@@ -365,22 +365,6 @@ button, .submit-button {
 label {
     white-space: nowrap;
 }
-/* Styling for the submit button */
-/* .submit-button {
-    background-color: rgb(134,206,193);
-    display: inline-block;
-    text-decoration: none;
-    color: black;
-    padding: 0.5em 1em 0.5em 1em;
-    transition: background-color 0.3s ease-out;
-    margin-top:1rem;
-} */
-
-/* .submit-button:hover, .submit-button:focus {
-        text-decoration: none;
-        background-color: rgb(34,34,34);
-        color: rgb(255,255,255);
-    } */
 
 
 /* Styling for image */
@@ -773,4 +757,44 @@ iframe {
 .col {
     flex: 0 0 40%;
     max-width: 200px;
+}
+/*-------Checkout------*/
+.product-cart {
+    flex: 1;
+    padding: 0 2rem 0 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+.product-cart h2 {
+    width: 200px;
+    height: auto;
+    }
+    .product-cart img {
+        width: 350px;
+        height: auto;
+        float: left;
+        padding: 0 1rem 0 0;
+    }
+.checkout {
+    margin-top: 2rem;
+    padding: 2rem;
+    /* width: 220px;
+  height: 320px; */
+    background-color: rgb(240,248,255);
+}
+
+.payment-product {
+    flex: 1;
+    margin: 2rem 3rem 0 2rem;
+}
+
+.payment-form {
+    margin: 1rem 0 0 0;
+}
+
+.payment-form input[type=text] {
+    width: 100%;
+    }
+.submit {
+    margin: 2rem 1rem 0 8rem;
 }
