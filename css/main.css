@@ -22,15 +22,6 @@ a {
 b, strong, h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
 }
-/* 
-.hidden {
-    display: none;
-}
-
-.icon {
-    width: 18px;
-    height: 18px;
-} */
 
 small {
     font-size: 10px;
@@ -313,6 +304,10 @@ button, .submit-button {
         background-color: rgb(173,216,230);
         border-radius: 0.4rem;
     }
+
+.product-description p {
+  max-width: 250px;
+}
 
 .product-details .product-info .product-description {
     font-size: 12px;
@@ -790,11 +785,13 @@ iframe {
 
 .payment-form {
     margin: 1rem 0 0 0;
+    max-width: 45%;
 }
 
 .payment-form input[type=text] {
     width: 100%;
     }
 .submit {
-    margin: 2rem 1rem 0 8rem;
+    margin: 2rem 1rem 0 3rem;
+    display: inline-block;
 }
