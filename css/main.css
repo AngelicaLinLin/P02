@@ -22,7 +22,7 @@ a {
 b, strong, h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
 }
-
+/* 
 .hidden {
     display: none;
 }
@@ -30,7 +30,7 @@ b, strong, h1, h2, h3, h4, h5, h6 {
 .icon {
     width: 18px;
     height: 18px;
-}
+} */
 
 small {
     font-size: 10px;
@@ -232,7 +232,7 @@ main .section {
         position: fixed;
         left: 68%;
 
-    
+
 }
 
 @media(max-width:829px) {

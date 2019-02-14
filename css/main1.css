@@ -157,12 +157,12 @@ nav {
 
 /*nav*/
 
-.nav-dropdown {
+/* .nav-dropdown {
     position: absolute;
     z-index: 1;
     box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
     display: none;
-}
+} */
 
 .nav-mobile {
     display: none;
@@ -187,7 +187,7 @@ nav {
 
 @media only screen and (max-width: 35.563em) {
     #logo {
-        margin-top: 5rem;
+        /* margin-top: 5rem; */
         position: absolute;
     }
 
@@ -285,7 +285,7 @@ nav {
 
     nav {
         width: 100%;
-        padding: 5em 0 1.25em;
+        /* padding: 5em 0 1.25em; */
     }
 
         nav ul li {
@@ -306,7 +306,7 @@ nav {
         }
 }
 
-#nav-toggle {
+/* #nav-toggle {
     position: absolute;
     left: 1em;
     top: 1.3em;
@@ -350,4 +350,4 @@ nav {
 
         #nav-toggle.active span:after {
             transform: rotate(-45deg);
-        }
+        } */

@@ -1,3 +1,4 @@
+
 @import "https://fonts.googleapis.com/css?family=Thasadith";
 * {
   box-sizing: border-box;
@@ -9,6 +10,7 @@ body {
 
 #logo {
   position: fixed;
+  /* top:2rem; */
 }
 
 .sidenav {
@@ -109,19 +111,20 @@ nav a:hover, nav a:focus {
   text-decoration: underline;
 }
 
+.sidenav .icon {
+  display: none;
+}
+
 /*right side main part*/
 .main {
   margin-left: 14rem; /* Same as the width of the sidenav */
   font-size: 16px; /* Increased text to enable scrolling */
   padding: 0rem 1rem;
   padding-top: 2rem;
-  /* margin-right: 10rem; */
-  margin-right: auto;
-  max-width: 60rem;
+  margin-right: 10rem;
+  /* width: 300px; */
+  /* max-width: 70rem; */
 }
-
-
-
 
 
 .maincontainer {
@@ -161,14 +164,14 @@ nav a:hover, nav a:focus {
 }
 
 /*nav*/
-
+/*
 .nav-dropdown {
   position: absolute;
   z-index: 1;
   box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
   display: none;
-}
-
+} */
+/*
 .nav-mobile {
   display: none;
   position: absolute;
@@ -177,14 +180,26 @@ nav a:hover, nav a:focus {
   background: #fff;
   height: 5em;
   width: 5em;
+} */
+
+/* .topnav #myLinks {
+display: block;
+} */
+@media(max-width: 800px){
+  .main{
+    margin-left:14rem;
+    margin-right:0rem;
+  }
+  /* #logo{
+  margin-left:1rem;
+  } */
 }
 
-
 @media only screen and (max-width: 35.563em) {
-  #logo {
+  /* #logo {
     margin-top: 5rem;
     position: absolute;
-  }
+  } */
   h1 {
     margin-left: 0.5rem;
   }
@@ -232,69 +247,69 @@ nav a:hover, nav a:focus {
     margin-left: 20%;
   }
 
-  nav {
-    width: 100%;
-    /* padding: 5em 0 1.25em; */
+  #logo {
+    position: absolute;
   }
-  nav ul li {
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+  .sidenav a {display: none;}
+  .sidenav a.icon {
+    /* float: left;
+    display: block; */
+    position:absolute;
+    left: 2rem;
+    top: 6rem;
+    display: block;
+  }
+
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  .sidenav.responsive {position: relative;}
+  .sidenav.responsive a.icon {
+    position:absolute;
+    left: 2rem;
+    top: 6rem;
+  }
+  .sidenav.responsive a {
     float: none;
-  }
-  nav ul li a {
-    padding: 1.25em 1.25em 1.25em 1.3em;
-    line-height: 20px;
-  }
-  nav ul li ul li a {
-    padding-left: 2.5em;
+    display: block;
+    text-align: left;
   }
 
-  nav a:hover::before {
-    transform: scale(0,0);
-  }
-
+  /* .topnav {
+  overflow: hidden;
+  background-color: grey;
+  position: relative;
 }
 
-#nav-toggle {
-  position: absolute;
-  left: 1em;
-  top: 1.3em;
-  cursor: pointer;
-  padding: 0.8em 2.917em 1.33em 0em;
+.topnav #myLinks {
+display: none;
 }
 
-#nav-toggle span,
-#nav-toggle span:before,
-#nav-toggle span:after {
-  cursor: pointer;
-  border-radius: 1px;
-  height: 0.35em;
-  width: 2.4em;
-  background: #463f3f;
-  position: absolute;
-  display: block;
-  content: '';
-  transition: all 300ms ease-in-out;
+.topnav a {
+color: white;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 17px;
+display: block;
 }
 
-#nav-toggle span:before {
-  top: -10px;
+.topnav a.icon {
+background: blue;
+display: block;
+position: absolute;
+right: 0;
+top: 0;
 }
 
-#nav-toggle span:after {
-  bottom: -10px;
+.topnav a:hover {
+background-color: red;
+color: rgb(100,149,210);
 }
 
-#nav-toggle.active span {
-  background-color: transparent;
-}
+.active {
+background-color: pink;
+color: rgb(95, 158, 160);
+} */
 
-#nav-toggle.active span:before, #nav-toggle.active span:after {
-  top: 0;
-}
-
-#nav-toggle.active span:before {
-  transform: rotate(45deg);
-}
-
-#nav-toggle.active span:after {
-  transform: rotate(-45deg);
 }

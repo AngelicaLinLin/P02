@@ -6,21 +6,19 @@
   <title>Product Listing</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="css/main.css" rel="stylesheet" type="text/css">
   <link href="css/main1.css" rel="stylesheet" type="text/css">
-  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-  <script src="js/nav.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet" type="text/css">
+  <link href="css/home.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
 </head>
 <body>
   <h1 id="logo"> CON+FORT</h1>
 
-  <div class="sidenav">
+  <div class="sidenav" id="mySidenav">
+
     <nav>
-      <div class="nav-mobile">
-        <a id="nav-toggle"><span></span></a>
-      </div>
       <ul class="nav-list">
 
         <a href="home.html">Home</a>
@@ -29,9 +27,13 @@
         <a href="checkout.html">Checkout</a>
         <a href="about.html">About</a>
         <a href="about.html">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()" >
+          <i class="fa fa-bars"></i>
+        </a>
       </ul>
     </nav>
   </div>
+
 
   <main>
     <div class="main">
@@ -109,17 +111,15 @@
     </footer>
     <!--    https://www.w3schools.com/howto/howto_js_media_queries.asp -->
     <script>
-    function myFunction(x) {
-      if (x.matches) { // If media query matches
-        $('nav ul').hide();
+      function myFunction() {
+        var x = document.getElementById("mySidenav");
+        if (x.className === "sidenav") {
+          x.className += " responsive";
+        } else {
+          x.className = "sidenav";
+        }
       }
-      else {
-        $('nav ul').show();
-      }
-    }
-    var x = window.matchMedia("(max-width: 35.563em)")
-    myFunction(x) // Call listener function at run time
-    x.addListener(myFunction) // Attach listener function on state changes</script>
+    </script>
   </main>
 
 </body>
