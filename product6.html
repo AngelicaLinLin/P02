@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+  <title>Product Listing</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/main.css" rel="stylesheet" type="text/css">
+  <link href="css/main1.css" rel="stylesheet" type="text/css">
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="js/nav.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+</head>
+<body>
+  <h1 id="logo"> CON+FORT</h1>
+
+  <div class="sidenav">
+    <nav>
+      <div class="nav-mobile">
+        <a id="nav-toggle"><span></span></a>
+      </div>
+      <ul class="nav-list">
+
+        <a href="home.html">Home</a>
+        <a href="productAll.html">Shop</a>
+        <a href="event.html">Event</a>
+        <a href="checkout.html">Checkout</a>
+        <a href="about.html">About</a>
+        <a href="about.html">Contact</a>
+      </ul>
+    </nav>
+  </div>
+
+  <main>
+    <div class="main">
+      <div class="section-content">
+        <div class="product-details">
+          <ul class="product-images">
+            <li class="preview">
+              <img src="./img/p6-1.jpg" alt="HOODED COAT">
+            </li>
+            <li class="preview"><a href="./img/p6.jpg"></a><img src="./img/p6.jpg" alt="HOODED COAT"></li>
+            <li class="preview"><a href="./img/p6_2.jpg"></a><img src="./img/p6_2.jpg" alt="HOODED COAT"></li>
+          </ul>
+          <ul class="product-info">
+              <li class="product-name">HOODED COAT</li>
+            <li class="product-price"><span>109.00</span><span>CA</span></li>
+            <li class="product-description">
+                <p>
+                    Three-quarter length coat with hooded collar with removable faux fur detail. Long sleeves. Front zip pockets. Front hidden zip and button closure.
+                </p>
+
+            </li>
+            <li class="product-attributes">
+              <div class="field-name">Color:</div>
+              <label>
+                <input type="radio" name="color"> Gray
+              </label>
+              <label>
+                <input type="radio" name="color"> Black
+              </label>
+
+              <div class="field-name">Size:</div>
+              <label>
+                <input type="radio" name="size"> S
+              </label>
+              <label>
+                <input type="radio" name="size"> M
+              </label>
+              <label>
+                  <input type="radio" name="size"> L
+              </label>
+            </li>
+            <li class="product-addtocart">
+              <a href="checkout.html"><button>Add To Cart</button></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="section-title"><h2>Check Out More Coats</h2></div>
+      <div class="section-content">
+          <ul class="product-list">
+              <li>
+                  <a href="product8.html" " class="product">
+                      <div class="product-image"><img src="img/p9_2.jpg" alt="WINTER JACKET"></div>
+                      <div class="product-name">WINTER JACKET</div>
+                      <div class="product-price"><span>$</span><span>189.00</span></div>
+                  </a>
+              </li>
+              <li>
+                  <a href="product6.html" class="product">
+                      <div class="product-image"><img src="./img/p6.jpg" alt="HOODED COAT"></div>
+                      <div class="product-name">HOODED COAT</div>
+                      <div class="product-price"><span>$</span><span>109.00</span></div>
+                  </a>
+              </li>
+          </ul>
+      </div>
+    </div>
+    <footer>
+      <p>copyright &copy; 2019. Con+Fort. all rights reserved.</p>
+      <p>
+        <a class="in-text-link" href="P02-Style_Guide/index.html">StyleGuide</a>
+        <a class="in-text-link" href="citation.html">Citations</a>
+        <a class="in-text-link" href="https://github.com/AngelicaLinLin/P02">GitHub</a>
+      </p>
+    </footer>
+    <!--    https://www.w3schools.com/howto/howto_js_media_queries.asp -->
+    <script>
+    function myFunction(x) {
+      if (x.matches) { // If media query matches
+        $('nav ul').hide();
+      }
+      else {
+        $('nav ul').show();
+      }
+    }
+    var x = window.matchMedia("(max-width: 35.563em)")
+    myFunction(x) // Call listener function at run time
+    x.addListener(myFunction) // Attach listener function on state changes</script>
+  </main>
+
+</body>
+</html>
