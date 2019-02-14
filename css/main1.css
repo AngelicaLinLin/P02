@@ -76,9 +76,9 @@ footer p {
 
 
 .flex-grid-footer {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 3rem 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5rem 0 0 6rem;
 }
 
 .footer-col {
@@ -111,25 +111,17 @@ nav a:hover, nav a:focus {
 
 /*right side main part*/
 .main {
-  margin-left: 14rem; /* Same as the width of the sidenav */
-  font-size: 16px; /* Increased text to enable scrolling */
-  padding: 0rem 1rem;
-  padding-top: 2rem;
-  margin-right: auto;
-  /* width: 300px; */
-  max-width: 60rem;
+    margin-left: 14rem; /* Same as the width of the sidenav */
+    font-size: 16px; /* Increased text to enable scrolling */
+    padding: 0rem 1rem;
+    padding-top: 2rem;
+    margin-right: 10rem;
+    max-width:60rem;
+
 }
 
-#about_page {
-  margin-left:auto;
-  margin-right:auto;
-  max-width: 40rem;
-  /* text-align: center; */
-}
 
-#about_page h3 {
-  text-align: center;
-}
+
 
 .maincontainer {
   flex-direction: column;
@@ -154,7 +146,7 @@ nav a:hover, nav a:focus {
 }
 
 .home-img-large {
-  /* flex:1 0 100%; */
+   flex:1 0 100%; 
   max-width: 100%;
 
 }
@@ -163,8 +155,8 @@ nav a:hover, nav a:focus {
   flex: 1 0 30%;
   position: relative;
   display: inline;
-  /* padding-top: 1rem; */
-  /* padding: 0.5rem; */
+   /*padding-top: 1rem; 
+   padding: 0.5rem;*/ 
 }
 
 /*nav*/
@@ -228,20 +220,43 @@ nav a:hover, nav a:focus {
   }
 
   .main {
-    /* padding-left: 0; */
+    padding-left: 0; 
     margin-left: 0;
     margin-right: 0;
   }
+.col {
+    flex: 0 0 15%;
+    max-width: 220px;
+    margin-left: auto;
+    margin-right: auto;
 
-  .main .product-details .product-info {
-    width: 70%;
-    position: static;
-    margin-left: 20%;
-  }
+        
+    }
+
+
+.footer-col {
+   width: 100%;
+   padding: 0.5rem 1rem 0.5rem 1rem;
+   }
+
+    .flex-grid-footer {
+        display: block;
+    }
+
+    .main .product-details .product-info {
+        display: block;
+        margin-left: 1%;
+        max-width: 80%;
+        text-overflow: ellipsis;
+        /* Required for text-overflow to do anything */
+
+        overflow: hidden;
+        position: static;
+    }
 
   nav {
     width: 100%;
-    /* padding: 5em 0 1.25em; */
+    padding: 5em 0 1.25em; 
   }
   nav ul li {
     float: none;
@@ -256,13 +271,6 @@ nav a:hover, nav a:focus {
 
   nav a:hover::before {
     transform: scale(0,0);
-  }
-
-  #about_page {
-    margin-left: 0;
-    /* margin-right: 8rem; */
-    /* max-width: 40rem; */
-    /* text-align: center; */
   }
 
 }
@@ -310,5 +318,4 @@ nav a:hover, nav a:focus {
 }
 
 #nav-toggle.active span:after {
-  transform: rotate(-45deg);
-}
+  transform: rotate(-45deg);
