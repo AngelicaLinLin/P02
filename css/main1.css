@@ -22,7 +22,7 @@ body {
   padding-top: 2rem;
 }
 
-h1 {
+h1  {
   margin-left: 2rem;
   padding-left: 0.5rem;
   font-weight: bold;
@@ -54,40 +54,37 @@ h5 {
 /* Styling for Footer */
 
 footer {
-    width: 100%;
-    position: absolute;
-    background-color: rgb(255,255,255);
-    margin: auto;
-    padding: 3rem 0 1rem 0;
-    text-align: center;
+  width: 100%;
+  position: absolute;
+  background-color: rgb(255,255,255);
+  margin: auto;
+  padding: 3rem 0 1rem 0;
+  text-align: center;
 }
 
-    footer p {
-        text-decoration: none;
-        font-size: 0.8em;
-    }
+footer p {
+  text-decoration: none;
+  font-size: 0.8em;
+}
 
 .footer-bottom {
-    position: absolute;
-    bottom: 0;
-    margin: 0 0 -2rem 0;
+  position: absolute;
+  bottom: 0;
+  margin: 0 0 -2rem 0;
 }
 
 
 
 .flex-grid-footer {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 3rem 0 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 3rem 0 0 0;
 }
 
 .footer-col {
-    flex: 1;
-    padding: 0 0 0 6.5rem;
+  flex: 1;
+  padding: 0 0 0 6.5rem;
 }
-
-
-
 
 
 nav {
@@ -114,7 +111,7 @@ nav a:hover, nav a:focus {
 
 /*right side main part*/
 .main {
-  margin-left: 18rem; /* Same as the width of the sidenav */
+  margin-left: 14rem; /* Same as the width of the sidenav */
   font-size: 16px; /* Increased text to enable scrolling */
   padding: 0rem 1rem;
   padding-top: 2rem;
@@ -122,6 +119,8 @@ nav a:hover, nav a:focus {
   /* width: 300px; */
   /* max-width: 70rem; */
 }
+
+
 
 
 
@@ -136,13 +135,13 @@ nav a:hover, nav a:focus {
 }
 
 .container2 {
-  flex:1
+  flex:1;
   display: flex;
   max-width: 1000px;
 }
 
 .small-img {
-  max-width: 33%;
+  max-width: 100%;
   flex:1;
 
 }
@@ -161,114 +160,141 @@ nav a:hover, nav a:focus {
   /* padding: 0.5rem; */
 }
 
+/*nav*/
 
-
+.nav-dropdown {
+  position: absolute;
+  z-index: 1;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+  display: none;
+}
 
 .nav-mobile {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: #fff;
-    height: 5em;
-    width: 5em;
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #fff;
+  height: 5em;
+  width: 5em;
 }
 
 
+@media only screen and (max-width: 35.563em) {
+  #logo {
+    margin-top: 5rem;
+    position: absolute;
+  }
+  h1 {
+    margin-left: 0.5rem;
+  }
+  .small-img {
+    max-width: 100%;
+    height: auto;
+    flex:1;
+  }
 
-    @media only screen and (max-width: 35.563em) {
-        #logo {
-            margin-top: 5rem;
-            left: 0;
-            position: absolute;
-        }
-
-        .footer-bottom {
-            position: static;
-        }
+  .footer-bottom {
+    position: static;
+  }
 
 
-        .flex-grid-footer {
-            display: flex;
-            flex-wrap: wrap;
-            margin: 3rem 0 0 0;
-        }
+  .flex-grid-footer {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 3rem 0 0 0;
+  }
 
-        .footer-col {
-            flex: 1;
-            padding: 0 0 0 6.5rem;
-        }
+  .footer-col {
+    flex: 1;
+    padding: 0 0 0 6.5rem;
+  }
 
-        .nav-mobile {
-            display: block;
-        }
+  .nav-mobile {
+    display: block;
+  }
 
-        .sidenav {
-            height: 100%;
-            width: 18rem;
-            position: relative;
-        }
+  .sidenav {
+    height: 100%;
+    width: 18rem;
+    position: relative;
+  }
 
-        .main {
-            /* padding-left: 0; */
-            margin-left: 0;
-            margin-right: 0;
-        }
+  .main {
+    /* padding-left: 0; */
+    margin-left: 0;
+    margin-right: 0;
+  }
 
-            /*.main .product-details .product-info {
-                width: 70%;
-                position: static;
-                margin-left: 20%;
-            }*/
+  .main .product-details .product-info {
+    width: 70%;
+    position: static;
+    margin-left: 20%;
+  }
 
-        nav {
-            width: 100%;
-            /* padding: 5em 0 1.25em; */
-        }
-    }
+  nav {
+    width: 100%;
+    /* padding: 5em 0 1.25em; */
+  }
+  nav ul li {
+    float: none;
+  }
+  nav ul li a {
+    padding: 1.25em 1.25em 1.25em 1.3em;
+    line-height: 20px;
+  }
+  nav ul li ul li a {
+    padding-left: 2.5em;
+  }
 
-    #nav-toggle {
-        position: absolute;
-        left: 1em;
-        top: 1.3em;
-        cursor: pointer;
-        padding: 0.8em 2.917em 1.33em 0em;
-    }
+  nav a:hover::before {
+    transform: scale(0,0);
+  }
 
-        #nav-toggle span,
-        #nav-toggle span:before,
-        #nav-toggle span:after {
-            cursor: pointer;
-            border-radius: 1px;
-            height: 0.35em;
-            width: 2.4em;
-            background: #463f3f;
-            position: absolute;
-            display: block;
-            content: '';
-            transition: all 300ms ease-in-out;
-        }
+}
 
-            #nav-toggle span:before {
-                top: -10px;
-            }
+#nav-toggle {
+  position: absolute;
+  left: 1em;
+  top: 1.3em;
+  cursor: pointer;
+  padding: 0.8em 2.917em 1.33em 0em;
+}
 
-            #nav-toggle span:after {
-                bottom: -10px;
-            }
+#nav-toggle span,
+#nav-toggle span:before,
+#nav-toggle span:after {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 0.35em;
+  width: 2.4em;
+  background: #463f3f;
+  position: absolute;
+  display: block;
+  content: '';
+  transition: all 300ms ease-in-out;
+}
 
-        #nav-toggle.active span {
-            background-color: transparent;
-        }
+#nav-toggle span:before {
+  top: -10px;
+}
 
-            #nav-toggle.active span:before, #nav-toggle.active span:after {
-                top: 0;
-            }
+#nav-toggle span:after {
+  bottom: -10px;
+}
 
-            #nav-toggle.active span:before {
-                transform: rotate(45deg);
-            }
+#nav-toggle.active span {
+  background-color: transparent;
+}
 
-            #nav-toggle.active span:after {
-                transform: rotate(-45deg);
-            }
+#nav-toggle.active span:before, #nav-toggle.active span:after {
+  top: 0;
+}
+
+#nav-toggle.active span:before {
+  transform: rotate(45deg);
+}
+
+#nav-toggle.active span:after {
+  transform: rotate(-45deg);
+}
