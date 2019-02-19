@@ -1,354 +1,142 @@
-@import "https://fonts.googleapis.com/css?family=Thasadith";
-
-* {
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Thasadith', sans-serif;
-    font-weight: bolder;
-}
-
-#logo {
-    position: fixed;
-}
-
-.sidenav {
-    height: 100%;
-    width: 18rem;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    overflow-x: hidden;
-    padding-top: 2rem;
-}
-
-h1 {
-    margin-left: 2rem;
-    padding-left: 0.5rem;
-    font-weight: bold;
-    color: rgb(72,61,139);
-}
-
-h2 {
-    margin-top: 3rem;
-    color: rgb(205,92,92);
-    text-align: center;
-}
-
-h3 {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    color: rgb(218,165,32);
-}
-
-h4 {
-    /* margin-bottom: 0.25rem; */
-    color: rgb(70, 130, 180);
-}
-
-h5 {
-    color: rgb(128,128,128);
-}
-
-/* Styling for Footer */
-
-footer {
-    width: 100%;
-    position: absolute;
-    background-color: rgb(255,255,255);
-    margin: auto;
-    padding: 3rem 0 1rem 0;
-    text-align: center;
-}
-
-    footer p {
-        text-decoration: none;
-        font-size: 0.8em;
-    }
-
-.footer-bottom {
-    position: absolute;
-    bottom: 0;
-    margin: 0 0 -2rem 0;
-}
-
-
-
-.flex-grid-footer {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 5rem 0 0 6rem;
-}
-
-.footer-col {
-    flex: 1;
-    padding: 0 0 0 6.5rem;
-}
-
-
-nav {
-    margin-top: 6rem;
-    margin-left: 2rem;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-    nav a {
-        padding-left: 1rem;
-        padding-bottom: 1rem;
-        color: rgb(95, 158, 160);
-        text-decoration: none;
-        margin-right: 5rem;
-        font-weight: bold;
-        font-size: 1rem;
-        display: block;
-    }
-
-        nav a:hover, nav a:focus {
-            color: rgb(100,149,210);
-            text-decoration: underline;
-        }
-
 /*right side main part*/
 .main {
-    margin-left: 14rem; /* Same as the width of the sidenav */
-    font-size: 16px; /* Increased text to enable scrolling */
-    padding: 0rem 1rem;
-    padding-top: 2rem;
-    margin-right: auto;
-    max-width: 60rem;
+  margin-left: 14rem; /* Same as the width of the sidenav */
+  font-size: 16px; /* Increased text to enable scrolling */
+  padding: 0rem 1rem;
+  padding-top: 2rem;
+  margin-right: auto;
+  max-width: 60rem;
 }
 
 .maincontainer {
-    flex-direction: column;
-    display: flex;
+  flex-direction: column;
+  display: flex;
 }
 
 .container1 {
-    flex: 1;
-    max-width: 1000px;
+  flex: 1;
+  max-width: 1000px;
 }
 
 .container2 {
-    flex: 1;
-    display: flex;
-    max-width: 1000px;
+  flex: 1;
+  display: flex;
+  max-width: 1000px;
 }
 
 .small-img {
-    max-width: 100%;
-    flex: 1;
+  max-width: 100%;
+  flex: 1;
 }
 
 .home-img-large {
-    flex: 1 0 100%;
-    max-width: 100%;
+  flex: 1 0 100%;
+  max-width: 100%;
 }
 
 .containersmall {
-    flex: 1 0 30%;
-    position: relative;
-    display: inline;
-    /*padding-top: 1rem;
-   padding: 0.5rem;*/
+  flex: 1 0 30%;
+  position: relative;
+  display: inline;
 }
-
-/*nav*/
-
-/* .nav-dropdown {
-    position: absolute;
-    z-index: 1;
-    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
-    display: none;
-} */
-
-.nav-mobile {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: #fff;
-    height: 5em;
-    width: 5em;
-}
-
 
 #about_page {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 40rem;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 40rem;
 }
 
-    #about_page h3 {
-        text-align: center;
-    }
+#about_page h3 {
+  text-align: center;
+}
 
 @media only screen and (max-width: 35.563em) {
-    #logo {
-        /* margin-top: 5rem; */
-        position: absolute;
-    }
-
-    h1 {
-        margin-left: 0.5rem;
-    }
-
-
-    .small-img {
-        max-width: 100%;
-        height: auto;
-        flex: 1;
-    }
-    .product-cart  {
-        margin-left:2rem;
-    }
-
-    .product-cart h1 {
-        margin-top: -5rem;
-    }
-    .payment-product {
-      flex: 1;
-        margin: 2rem 3rem 0 2rem;
-        max-width: 120%;
-    }
-
-    /* .payment-form input[type=text] {
-        width: 40rem;
-    }
-
-    .payment-form {
-        padding: 0 2rem 0 0;
-    } */
-
-    .submit {
-    margin: 2rem 1rem 0 4rem;
-    }
-    .footer-bottom {
-        position: static;
-    }
-
-
-    .flex-grid-footer {
-        display: flex;
-        flex-wrap: wrap;
-        margin: 3rem 0 0 0;
-    }
-
-    .footer-col {
-        flex: 1;
-        padding: 0 0 0 6.5rem;
-    }
-
-    .nav-mobile {
-        display: block;
-    }
-
-    .sidenav {
-        height: 100%;
-        width: 18rem;
-        position: relative;
-    }
-
-    .main {
-        /* padding-left: 0; */
-        margin-left: 0;
-        margin-right: 0;
-    }
-
-    .col {
-        flex: 0 0 15%;
-        max-width: 220px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-
-    .footer-col {
-        width: 100%;
-        padding: 0.5rem 1rem 0.5rem 1rem;
-    }
-
-    .flex-grid-footer {
-        display: block;
-    }
-
-    .main .product-details .product-info {
-        display: block;
-        margin-left: 1%;
-        max-width: 80%;
-        text-overflow: ellipsis;
-        /* Required for text-overflow to do anything */
-        overflow: hidden;
-        position: static;
-    }
-
-    nav {
-        width: 100%;
-        /* padding: 5em 0 1.25em; */
-    }
-
-        nav ul li {
-            float: none;
-        }
-
-            nav ul li a {
-                padding: 1.25em 1.25em 1.25em 1.3em;
-                line-height: 20px;
-            }
-
-            nav ul li ul li a {
-                padding-left: 2.5em;
-            }
-
-        nav a:hover::before {
-            transform: scale(0,0);
-        }
-}
-
-/* #nav-toggle {
+  #logo {
+    /* margin-top: 5rem; */
     position: absolute;
-    left: 1em;
-    top: 1.3em;
-    cursor: pointer;
-    padding: 0.8em 2.917em 1.33em 0em;
+  }
+
+  h1 {
+    margin-left: 0.5rem;
+  }
+
+
+  .small-img {
+    max-width: 100%;
+    height: auto;
+    flex: 1;
+  }
+  .product-cart  {
+    margin-left:2rem;
+  }
+
+  .product-cart h1 {
+    margin-top: -5rem;
+  }
+  .payment-product {
+    flex: 1;
+    margin: 2rem 3rem 0 2rem;
+    max-width: 120%;
+  }
+
+  .submit {
+    margin: 2rem 1rem 0 4rem;
+  }
+  .footer-bottom {
+    position: static;
+  }
+
+  .flex-grid-footer {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 3rem 0 0 0;
+  }
+
+  .footer-col {
+    flex: 1;
+    padding: 0 0 0 6.5rem;
+  }
+
+  .sidenav {
+    height: 100%;
+    width: 18rem;
+    position: relative;
+  }
+
+  .main {
+    /* padding-left: 0; */
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .col {
+    flex: 0 0 15%;
+    max-width: 220px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  .footer-col {
+    width: 100%;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+  }
+
+  .flex-grid-footer {
+    display: block;
+  }
+
+  .main .product-details .product-info {
+    display: block;
+    margin-left: 1%;
+    max-width: 80%;
+    text-overflow: ellipsis;
+    /* Required for text-overflow to do anything */
+    overflow: hidden;
+    position: static;
+  }
+
+  nav a:hover::before {
+    transform: scale(0,0);
+  }
 }
-
-    #nav-toggle span,
-    #nav-toggle span:before,
-    #nav-toggle span:after {
-        cursor: pointer;
-        border-radius: 1px;
-        height: 0.35em;
-        width: 2.4em;
-        background: #463f3f;
-        position: absolute;
-        display: block;
-        content: '';
-        transition: all 300ms ease-in-out;
-    }
-
-        #nav-toggle span:before {
-            top: -10px;
-        }
-
-        #nav-toggle span:after {
-            bottom: -10px;
-        }
-
-    #nav-toggle.active span {
-        background-color: transparent;
-    }
-
-        #nav-toggle.active span:before, #nav-toggle.active span:after {
-            top: 0;
-        }
-
-        #nav-toggle.active span:before {
-            transform: rotate(45deg);
-        }
-
-        #nav-toggle.active span:after {
-            transform: rotate(-45deg);
-        } */

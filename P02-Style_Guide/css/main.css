@@ -29,16 +29,6 @@ Default styling for the style guide
   display: block;
 }
 
-/* .nav-mobile {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: #fff;
-    height: 5em;
-    width: 5em;
-} */
-
 body {
   font-family: 'Thasadith', sans-serif;
   font-weight: bolder;
