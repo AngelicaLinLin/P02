@@ -159,8 +159,30 @@ a:hover {
   .main{
     margin-left:14rem;
     margin-right:0rem;
+    margin-top:0.5rem;
   }
+   .footer-col {
+
+    /*flex: 0 0 40%;*/
+    padding: 0 1rem 0 3.5rem;
+    }
 }
+
+/*@media only screen and (max-width: 51.43rem) {
+
+ .flex-grid-footer {
+    display: block;
+
+
+}
+
+    .footer-col {
+        display: inline-block;
+        flex: 1;
+        padding: 0 1rem 0 3.5rem;
+    }
+
+}*/
 
 @media only screen and (max-width: 35.563em) {
   h1 {
@@ -176,16 +198,54 @@ a:hover {
     position: static;
   }
 
-  .flex-grid-footer {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 3rem 0 0 0;
+    .product-cart {
+        margin-left: 2rem;
+        /*margin-right: 3rem;*/;
+        margin-bottom: 1rem;
+    }
+
+        .product-cart h2 {
+            margin-right: 1rem;
+        }
+
+    .payment-product {
+        flex: 1;
+        margin: 2rem 3rem 0 2rem;
+        width: 400px;
+    }
+
+    .submit {
+        margin: 2rem 1rem 0 4rem;
+    }
+
+    .col {
+        flex: 0 0 15%;
+        max-width: 220px;
+        margin: 0 0 0 1rem;
+
+        
+    }
+
+  .main .product-details .product-images {
+      display:inline;
+      margin:0 10rem 0 0 ;
   }
 
-  .footer-col {
-    flex: 1;
-    padding: 0 0 0 6.5rem;
+  .main .product-details .product-info {
+
+    margin:0 1rem 0 0 ;
+    max-width: 90%;
+    position: static;
   }
+
+  .section{
+    margin:0 1rem 0 0 ;
+  }
+
+  nav a:hover::before {
+    transform: scale(0,0);
+  }
+
 
 
   .sidenav {
@@ -198,13 +258,10 @@ a:hover {
     /* padding-left: 0; */
     margin-left: 0;
     margin-right: 0;
+    margin-bottom:0.5rem;
   }
 
-  .main .product-details .product-info {
-    width: 70%;
-    position: static;
-    margin-left: 20%;
-  }
+
 
   #logo {
     position: absolute;
@@ -236,13 +293,33 @@ a:hover {
 }
 
 
-/* Styling for Footer */
+/* Styling for Footer------------------------ */
+
+
+.flex-grid-footer {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 4rem 0 0 0;
+
+}
+
+.footer-col {
+    flex: 1;
+    padding: 0 1rem 0 3.5rem;
+
+}
+.footer-col p{
+
+    max-width:300px;
+}
+.footer-col submit button{
+
+}
 footer {
   width: 100%;
   position: absolute;
-  background-color: rgb(255,255,255);
   margin: auto;
-  padding: 3rem 0 1rem 0;
+  padding: 3rem 0 0 0;
   text-align: center;
 }
 
@@ -251,19 +328,6 @@ footer p {
   font-size: 0.8em;
 }
 
-.footer-bottom {
-  position: absolute;
-  bottom: 0;
-  margin: 0 0 -2rem 0;
-}
 
-.flex-grid-footer {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 3rem 0 0 0;
-}
 
-.footer-col {
-  flex: 1;
-  padding: 0 0 0 6.5rem;
-}
+

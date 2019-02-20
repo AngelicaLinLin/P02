@@ -47,25 +47,7 @@ header #menu {
 header #menu .trigger {
   display: none;
 }
-.flex-grid-footer {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 3rem 0 0 0;
-}
-.footer-col {
-  flex: 1;
-  padding: 0 0 0 6.5rem;
-}
-@media (max-width: 59rem) {
-  .footer-col {
-    width: 100%;
-    padding: 0.5rem 1rem 0.5rem 1rem;
-  }
 
-  .flex-grid-footer {
-    display: block;
-  }
-}
 
 /** Product details */
 .product-details {
@@ -127,10 +109,13 @@ header #menu .trigger {
 @media(max-width:829px) {
   .product-details .product-info {
     /*margin-right:1rem;*/
-    margin-right: 1rem;
-    max-width: 550%;
+    
+    max-width: 580%;
     position: static;
 
+  }
+  .section{
+    margin:0 0 0 9rem;
   }
 
 }
@@ -163,7 +148,7 @@ header #menu .trigger {
 
 button, .submit-button {
   display: inline-block;
-  padding: 0.5rem;
+  padding: 2rem;
   color: white;
   background-color: rgb(176, 196, 222);
   text-decoration: none;
@@ -444,55 +429,7 @@ COMBINED ELEMENTS -------------------
 
 
 
-/* Styling for Footer */
 
-footer {
-  width: 100%;
-  position: absolute;
-  background-color: rgb(255,255,255);
-  margin: auto;
-  padding: 3rem 0 1rem 0;
-  text-align: center;
-}
-
-footer p {
-  text-decoration: none;
-  font-size: 0.8em;
-}
-
-.footer-bottom {
-  position: absolute;
-  bottom: 0;
-  margin: 0 0 -2rem 0;
-}
-
-@media (max-width: 32rem) {
-  .footer-bottom {
-    position: static;
-  }
-}
-
-.flex-grid-footer {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 3rem 0 0 0;
-}
-
-.footer-col {
-  flex: 1;
-  padding: 0 0 0 6.5rem;
-}
-
-@media (max-width: 59rem) {
-  .footer-col {
-    width: 100%;
-    padding: 0.5rem 1rem 0.5rem 1rem;
-  }
-
-  .flex-grid-footer {
-    display: block;
-  }
-}
 
 
 /* Styling the Product Listing */
@@ -554,6 +491,7 @@ iframe {
   display: flex;
   flex-wrap: wrap;
   margin-left: 5%;
+
 }
 
 .col {
@@ -577,23 +515,25 @@ iframe {
   float: left;
   padding: 0 1rem 0 0;
 }
-.checkout {
-  margin-top: 2rem;
+.checkoutInfo {
+
   padding: 2rem;
-  /* width: 220px;
-  height: 320px; */
-  background-color: rgb(240,248,255);
+  display:inline-block;
+
 }
+
 
 .payment-product {
   flex: 1;
   margin: 2rem 3rem 0 2rem;
-  max-width: 100%;
+
+
 }
 
 .payment-form {
+  display:block;
   margin: 1rem 0 0 0;
-  max-width: 45%;
+  width:150px;
 }
 
 .payment-form input[type=text] {
