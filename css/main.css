@@ -68,7 +68,7 @@ header #menu .trigger {
 
 .product-details .product-images > li {
   display: inline-block;
-  width: 64px;
+  width: 100px;
   height: product-dimenstions(64px);
   overflow: hidden;
   margin: 5px;
@@ -109,7 +109,7 @@ header #menu .trigger {
 @media(max-width:829px) {
   .product-details .product-info {
     /*margin-right:1rem;*/
-    
+
     max-width: 580%;
     position: static;
 
@@ -197,17 +197,24 @@ label {
 }
 
 
-/* Styling for image */
-.item1 {
+/* Styling for product listing------------- */
+.item{
   text-decoration: none;
   padding: 0 0 0 2rem;
   width: 110%;
   height: 110%;
   display: inline-block;
-  background-image: url("../img/1.jpg");
   background-repeat: no-repeat;
   background-size: contain;
   margin: auto;
+
+
+
+}
+.item1 {
+
+  background-image: url("../img/1.jpg");
+
 }
 
 .item1 h3 {
@@ -223,21 +230,13 @@ label {
 .item1:focus {
   background-image: url("../img/3.jpg");
 }
-.col p {
+/*.col p {
   padding: 0 0 0 .5rem;
-}
+}*/
 
 
 .item2 {
-  text-decoration: none;
-  padding: 0 1rem 0 3rem;
-  width: 110%;
-  height: 110%;
-  display: inline-block;
-  background-image: url("../img/p2.jpg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  margin: auto;
+    background-image: url("../img/p2.jpg");
 }
 
 .item2 h3 {
@@ -256,15 +255,8 @@ label {
 
 
 .item3 {
-  text-decoration: none;
-  padding: 0 0 0 2.5rem;
-  width: 110%;
-  height: 110%;
-  display: inline-block;
   background-image: url("../img/p3.jpg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  margin: auto;
+
 }
 
 .item3 h3 {
@@ -287,15 +279,8 @@ label {
 }
 
 .item4 {
-  text-decoration: none;
-  padding: 0 0 0 2.5rem;
-  width: 110%;
-  height: 110%;
-  display: inline-block;
   background-image: url("../img/p4.jpg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  margin: auto;
+
 }
 
 .item4 h3 {
@@ -314,16 +299,8 @@ label {
 
 
 .item5 {
-  text-decoration: none;
-  padding: 0 0 0 2.5rem;
-  width: 110%;
-  height: 110%;
-  display: inline-block;
-  overflow: hidden;
   background-image: url("../img/p5_2.jpg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  margin: auto;
+
 }
 
 .item5 h3 {
@@ -342,16 +319,8 @@ label {
 
 
 .item6 {
-  text-decoration: none;
-  padding: 0 0 0 2.5rem;
-  width: 110%;
-  height: 110%;
-  display: inline-block;
-  overflow: hidden;
   background-image: url("../img/p6-1.jpg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  margin: auto;
+
 }
 
 .item6 h3 {
@@ -369,16 +338,9 @@ label {
 }
 
 .item7 {
-  text-decoration: none;
-  padding: 0 0 0 2rem;
-  width: 110%;
-  height: 110%;
-  display: inline-block;
-  overflow: hidden;
+
   background-image: url("../img/p7_1.jpg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  margin: auto;
+
 }
 
 .item7 h3 {
@@ -397,16 +359,8 @@ label {
 }
 
 .item8 {
-  text-decoration: none;
-  padding: 0 0 0 2.5rem;
-  width: 110%;
-  height: 110%;
-  display: inline-block;
-  overflow: hidden;
   background-image: url("../img/p9.jpg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  margin: auto;
+
 }
 
 .item8 h3 {
@@ -434,19 +388,8 @@ COMBINED ELEMENTS -------------------
 
 /* Styling the Product Listing */
 
-.product-listing img {
-  max-width: 80%;
-  height: auto;
-}
 
-.flex-grid .product-listing {
-  flex: 1;
-}
 
-.product-listing .submit-button {
-  padding-left: 5em;
-  padding-right: 5em;
-}
 
 .flex-grid img {
   max-width: 100%;
