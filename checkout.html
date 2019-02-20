@@ -15,7 +15,7 @@
 </head>
 <body>
   <!-- navigation bar for switching between different pages, i.e. styleguide, product listing pages -->
-  <h1 id="logo"> CON+FORT</h1>
+ <h1 id="logo" > CON+FORT</h1>
 
   <div class="sidenav" id="mySidenav">
 
@@ -36,76 +36,116 @@
 </div>
 
 
-<div class="main">
-  <div class="flex-grid">
-    <div class="product-cart">
-      <!-- <h1>Your Cart</h1> -->
-      <h2>WINTER JACKET</h2>
-      <img src="./img/p9.jpg" alt="WINTER JACKET">
+  <div class="main">
+      <h1>Checkout Cart</h1>
+      <div class="flex-grid">
+          <div class="product-cart">
+              <!-- <h1>Your Cart</h1> -->
+              <h2>WINTER JACKET</h2>
+              <img src="./img/p9.jpg" alt="WINTER JACKET">
+
+              <div class="checkoutInfo">
+                  <h3>WINTER JACKET</h3>
+                  <p><span>$189.00</span><span>CA</span></p>
+                  <p>
+                      <span>
+                          QTY :
+                          <select>
+                              <option value="QTY : 1"> 1</option>
+                              <option value="QTY : 2"> 2</option>
+                              <option value="QTY : 3"> 3</option>
+                              <option value="QTY : 4"> 4</option>
+                              <option value="QTY : 5"> 5</option>
+                              <option value="QTY : 6"> 6</option>
+                          </select>
+                      </span>
+                  </p>
+
+                  <p>
+                      <a class="submit-button" href="#">Add</a>
+                      <a class="submit-button" href="#">Remove</a>
+
+                  </p>
+              </div>
 
 
-      <p>PRICE :$189.00</p>
-      <p>QTY : 1</p>
-      <a class="submit-button" href="#">Add</a>
-      <a class="submit-button" href="#">Remove</a>
-    </div>
-  </div>
-  <div class="flex-grid">
-    <div class="product-cart">
-      <h2>SHORT COAT</h2>
-      <img src="./img/p5.jpg" alt="SHORT COAT">
+
+          </div>
+      </div>
+      <div class="flex-grid">
+          <div class="product-cart">
+              <h2>SHORT COAT</h2>
+              <img src="./img/p5.jpg" alt="SHORT COAT">
+
+              <div class="checkoutInfo">
+                  <h3>SHORT COAT</h3>
+                  <p><span>$129.00</span><span>CA</span></p>
+                  <p>
+                      <span>
+                          QTY :
+                          <select>
+                              <option value="QTY : 1"> 1</option>
+                              <option value="QTY : 2"> 2</option>
+                              <option value="QTY : 3"> 3</option>
+                              <option value="QTY : 4"> 4</option>
+                              <option value="QTY : 5"> 5</option>
+                              <option value="QTY : 6"> 6</option>
+                          </select>
+                      </span>
+                  </p>
+
+                  <p>
+                      <a class="submit-button" href="#">Add</a>
+                      <a class="submit-button" href="#">Remove</a>
+
+                  </p>
+              </div>
+
+          </div>
+
+      </div>
+      <h1>Payment Info</h1>
+      <div class="flex-grid">
 
 
-      <p>PRICE :$129.00</p>
-      <p>QTY : 1</p>
-      <a class="submit-button" href="#">Add</a>
-      <a class="submit-button" href="#">Remove</a>
 
-    </div>
+          <div>
+              <div class="payment-product">
+                  <form class="payment-form">
+                      <label for="email">Email</label>
+                      <input type="text" id="email" placeholder="Email">
+                      <label for="first-name">First Name </label>
+                      <input type="text" id="first-name" placeholder="First Name">
+                      <label for="address">Address</label>
+                      <input type="text" id="address" placeholder="Address">
+                      <label for="city">City</label>
+                      <input type="text" id="city" placeholder="City">
+                      <label for="postal-code">Postal Code</label>
+                      <input type="text" id="postal-code" placeholder="Postal Code">
+                  </form>
+              </div>
 
-  </div>
+              <div class="payment-product">
+                  <form class="payment-form">
+                      <label for="card-number">Card Number</label>
+                      <input type="text" id="card-number" placeholder="Card Number">
+                      <label for="expiration-date">Expiration Date</label>
+                      <input type="text" id="expiration-date" placeholder="Expiration Date">
+                      <label for="CVV">CVV</label>
+                      <input type="text" maxlength="4" size="4" id="CVV" placeholder="CVV">
+                  </form>
 
-  <div class="flex-grid">
+              </div>
 
-    <h1>Payment Info</h1>
+              <div class="submit">
+                  <a class="submit-button" href="#">Submit</a>
+                  <a class="submit-button" href="#">Cancel</a>
+              </div>
 
-    <div>
-      <div class="payment-product">
-        <form class="payment-form">
-          <label for="email">Email</label>
-          <input type="text" id="email" placeholder="Email">
-          <label for="first-name">First Name </label>
-          <input type="text" id="first-name" placeholder="First Name">
-          <label for="address">Address</label>
-          <input type="text" id="address" placeholder="Address">
-          <label for="city">City</label>
-          <input type="text" id="city" placeholder="City">
-          <label for="postal-code">Postal Code</label>
-          <input type="text" id="postal-code" placeholder="Postal Code">
-        </form>
+          </div>
       </div>
 
-      <div class="payment-product">
-        <form class="payment-form">
-          <label for="card-number">Card Number</label>
-          <input type="text" id="card-number" placeholder="Card Number">
-          <label for="expiration-date">Expiration Date</label>
-          <input type="text" id="expiration-date" placeholder="Expiration Date">
-          <label for="CVV">CVV</label>
-          <input type="text" maxlength="4" size="4" id="CVV" placeholder="CVV">
-        </form>
-
-      </div>
-
-      <div class="submit">
-        <a class="submit-button" href="#">Submit</a>
-        <a class="submit-button" href="#">Cancel</a>
-      </div>
-
-    </div>
   </div>
-
-</div>
 
 
 <footer>
