@@ -83,8 +83,6 @@ nav a:hover, nav a:focus {
   display: none;
 }
 
-
-
 /*right side main part*/
 .main {
   margin-left: 14rem; /* Same as the width of the sidenav */
@@ -128,8 +126,6 @@ nav a:hover, nav a:focus {
   flex: 1 0 30%;
   position: relative;
   display: inline;
-  /* padding-top: 1rem; */
-  /* padding: 0.5rem; */
 }
 
 button, .submit-button {
@@ -162,27 +158,9 @@ a:hover {
     margin-top:0.5rem;
   }
    .footer-col {
-
-    /*flex: 0 0 40%;*/
     padding: 0 1rem 0 3.5rem;
     }
 }
-
-/*@media only screen and (max-width: 51.43rem) {
-
- .flex-grid-footer {
-    display: block;
-
-
-}
-
-    .footer-col {
-        display: inline-block;
-        flex: 1;
-        padding: 0 1rem 0 3.5rem;
-    }
-
-}*/
 
 @media only screen and (max-width: 35.563em) {
   h1 {
@@ -222,8 +200,6 @@ a:hover {
         flex: 0 0 15%;
         max-width: 220px;
         margin: 0 0 0 1rem;
-
-        
     }
 
   .main .product-details .product-images {
@@ -246,8 +222,6 @@ a:hover {
     transform: scale(0,0);
   }
 
-
-
   .sidenav {
     height: 100%;
     width: 18rem;
@@ -260,8 +234,6 @@ a:hover {
     margin-right: 0;
     margin-bottom:0.5rem;
   }
-
-
 
   #logo {
     position: absolute;
@@ -292,28 +264,21 @@ a:hover {
   }
 }
 
-
 /* Styling for Footer------------------------ */
-
-
 .flex-grid-footer {
     display: flex;
     flex-wrap: wrap;
     margin: 4rem 0 0 0;
-
 }
 
 .footer-col {
     flex: 1;
     padding: 0 1rem 0 3.5rem;
-
 }
 .footer-col p{
-
     max-width:300px;
 }
 .footer-col submit button{
-
 }
 footer {
   width: 100%;
@@ -328,6 +293,13 @@ footer p {
   font-size: 0.8em;
 }
 
+/*tylying for about page's content alignment */
+#about_page {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 40rem;
+}
 
-
-
+#about_page h3 {
+  text-align: center;
+}

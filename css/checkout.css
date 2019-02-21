@@ -21,11 +21,6 @@
     margin: 3rem 2rem 0 2rem;
 
   }
-
-
-
-
-
 }
 
 /* When the image of items are too big to be stored*/
@@ -34,12 +29,12 @@
     margin-left: -18rem;
     margin-top:-6rem;
   }
-    .item {
-        display:block;
-    }
-    .pay {
-        display: block;
-    }
+  .item {
+    display:block;
+  }
+  .pay {
+    display: block;
+  }
 
 
   .click {
@@ -47,90 +42,63 @@
     width: 140px;
     margin: auto;
   }
-
-
-  }
-
-
-
-
-
 }
 
 
-    .checkout_items {
-        flex: 4;
-        /*background-color: red;*/
-        height: 100px;
-    }
+
+.checkout_items {
+  flex: 4;
+  /*background-color: red;*/
+  height: 100px;
+}
 
 
 
-    .item {
-        height: 200px;
-        background-color: white;
-        margin-left: 20rem;
-        margin-bottom: 11rem;
-        display: flex;
-    }
+.item {
+  height: 200px;
+  background-color: white;
+  margin-left: 20rem;
+  margin-bottom: 11rem;
+  display: flex;
+}
 
 
-    .imagedisplay {
-        background-image: url("../img/1.jpg");
-        background-repeat: no-repeat;
-        background-size: contain;
-        width: 200px;
-        height: 100%;
-    }
+.imagedisplay {
+  background-image: url("../img/1.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 200px;
+  height: 100%;
+}
 
-    .imagedisplay1 {
-        background-image: url("../img/p8.jpg");
-        background-repeat: no-repeat;
-        background-size: contain;
-        width: 200px;
-        height: 100%;
-    }
+.imagedisplay1 {
+  background-image: url("../img/p8.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 200px;
+  height: 100%;
+}
 
-    .item_display {
-        flex: 3;
-        display: block;
-        height: auto;
-        width: 400px;
-    }
-
-
-    .item_name {
-        font-size: 18px;
-        margin-top: .4rem;
-        padding-bottom: .3rem;
-        width: 180px;
-    }
-
-    .pay {
-        margin: 20rem;
-        margin-top: 10rem;
-    }
-
-    .click {
-        margin-top: 1.8rem;
-    }
+.item_display {
+  flex: 3;
+  display: block;
+  height: auto;
+  width: 400px;
+}
 
 
+.item_name {
+  font-size: 18px;
+  margin-top: .4rem;
+  padding-bottom: .3rem;
+  width: 180px;
+}
 
+.pay {
+  margin: 20rem;
+  margin-top: 10rem;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.click {
+  margin-top: 1.8rem;
+}
