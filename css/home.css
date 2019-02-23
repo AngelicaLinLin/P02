@@ -10,13 +10,16 @@ body {
 
 #logo {
   position: fixed;
+  text-decoration: none;
+  padding-top: 0.8rem;
 }
 
-h1  {
+h1, #logo{
   margin-left: 2rem;
   padding-left: 0.5rem;
   font-weight: bold;
   color: rgb(72,61,139);
+  /* position: fixed; */
 }
 
 h2 {
@@ -136,6 +139,10 @@ button, .submit-button {
   text-decoration: none;
   transition-property: background-color;
   transition-duration: 0.5s;
+  width: 5rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 button:hover, button:active, .submit-button:hover, .submit-button:active {
@@ -143,7 +150,7 @@ button:hover, button:active, .submit-button:hover, .submit-button:active {
   border-radius: 0.4rem;
 }
 
-a {
+.in-text-link, .col p {
   color: #666;
   text-decoration: none;
 }
@@ -151,16 +158,16 @@ a:hover {
   text-decoration: underline;
 }
 
-@media(max-width: 800px){
+/* @media(max-width: 800px){
   .main{
     margin-left:14rem;
     margin-right:0rem;
     margin-top:0.5rem;
   }
-   .footer-col {
+  .footer-col {
     padding: 0 1rem 0 3.5rem;
-    }
-}
+  }
+} */
 
 @media only screen and (max-width: 35.563em) {
   h1 {
@@ -176,35 +183,34 @@ a:hover {
     position: static;
   }
 
-    .product-cart {
-        margin-left: 2rem;
-        /*margin-right: 3rem;*/;
-        margin-bottom: 1rem;
-    }
+  .product-cart {
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+  }
 
-        .product-cart h2 {
-            margin-right: 1rem;
-        }
+  .product-cart h2 {
+    margin-right: 1rem;
+  }
 
-    .payment-product {
-        flex: 1;
-        margin: 2rem 3rem 0 2rem;
-        width: 400px;
-    }
+  .payment-product {
+    flex: 1;
+    margin: 2rem 3rem 0 2rem;
+    width: 400px;
+  }
 
-    .submit {
-        margin: 2rem 1rem 0 4rem;
-    }
+  .submit {
+    margin: 2rem 1rem 0 4rem;
+  }
 
-    .col {
-        flex: 0 0 15%;
-        max-width: 220px;
-        margin: 0 0 0 1rem;
-    }
+  .col {
+    flex: 0 0 15%;
+    max-width: 220px;
+    margin: 0 0 0 1rem;
+  }
 
   .main .product-details .product-images {
-      display:inline;
-      margin:0 10rem 0 0 ;
+    display:inline;
+    margin:0 10rem 0 0 ;
   }
 
   .main .product-details .product-info {
@@ -226,6 +232,7 @@ a:hover {
     height: 100%;
     width: 18rem;
     position: relative;
+    padding-top: 0;
   }
 
   .main {
@@ -233,50 +240,60 @@ a:hover {
     margin-left: 0;
     margin-right: 0;
     margin-bottom:0.5rem;
+    padding-top: 0;
   }
 
   #logo {
     position: absolute;
+    text-align:justify;
+    width: 100%;
+    padding-top: 0;
   }
 
-/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-  .sidenav a {display: none;}
+  /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+  .sidenav nav a {display: none;}
   .sidenav a.icon {
     /* float: left;
     display: block; */
     position:absolute;
-    left: 2rem;
-    top: 6rem;
+    left: 0rem;
+    top: 1.8rem;
     display: block;
+    font-size: 1.5rem;
   }
 
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
   .sidenav.responsive {position: relative;}
   .sidenav.responsive a.icon {
     position:absolute;
-    left: 2rem;
-    top: 6rem;
+    left: 0rem;
+    top: 1.8rem;
   }
   .sidenav.responsive a {
     float: none;
     display: block;
     text-align: left;
   }
+  nav {
+    margin-left: 0rem;
+    margin-top: 4rem;
+    padding-left: 0.5rem;
+  }
 }
 
 /* Styling for Footer------------------------ */
 .flex-grid-footer {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 4rem 0 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 4rem 0 0 0;
 }
 
 .footer-col {
-    flex: 1;
-    padding: 0 1rem 0 3.5rem;
+  flex: 1;
+  padding: 0 1rem 0 3.5rem;
 }
 .footer-col p{
-    max-width:300px;
+  max-width:300px;
 }
 .footer-col submit button{
 }

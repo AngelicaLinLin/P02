@@ -146,21 +146,6 @@ header #menu .trigger {
 
 
 
-button, .submit-button {
-  display: inline-block;
-  padding: 2rem;
-  color: white;
-  background-color: rgb(176, 196, 222);
-  text-decoration: none;
-  transition-property: background-color;
-  transition-duration: 0.5s;
-}
-
-button:hover, button:active, .submit-button:hover, .submit-button:active {
-  background-color: rgb(173,216,230);
-  border-radius: 0.4rem;
-}
-
 .product-description p {
   max-width: 250px;
 }
