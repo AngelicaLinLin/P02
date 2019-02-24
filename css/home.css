@@ -158,6 +158,50 @@ a:hover {
   text-decoration: underline;
 }
 
+/* Styling for Footer------------------------ */
+.flex-grid-footer {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 4rem 0 0 12rem;
+}
+
+.footer-col {
+    flex: 1;
+    padding: 0 1rem 0 3.5rem;
+}
+
+.footer-col p {
+    max-width: 300px;
+ }
+
+.footer-col submit button {
+    }
+
+footer {
+    width: 100%;
+    position: absolute;
+    margin: auto;
+    padding: 3rem 0 0 0;
+    text-align: center;
+}
+
+footer p {
+  text-decoration: none;
+  font-size: 0.8em;
+}
+
+/*tylying for about page's content alignment */
+#about_page {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 40rem;
+}
+
+#about_page h3 {
+  text-align: center;
+}
+
+
 /* @media(max-width: 800px){
   .main{
     margin-left:14rem;
@@ -205,28 +249,40 @@ a:hover {
   .col {
     flex: 0 0 15%;
     max-width: 220px;
-    margin: 0 0 0 1rem;
+    
   }
 
-  .main .product-details .product-images {
-    display:inline;
-    margin:0 10rem 0 0 ;
-  }
+ .main .product-details .product-images {
+    margin: 0 0 0 -2rem;
+    }
 
-  .main .product-details .product-info {
+.main .product-details .product-info {
 
     margin:0 1rem 0 0 ;
-    max-width: 90%;
+    max-width: 100%;
     position: static;
   }
+.product-list{
+    margin: 0 0 0 -2rem;
+
+}
 
   .section{
     margin:0 1rem 0 0 ;
+  }
+  
+  .flex-grid-footer {
+    margin:4rem 0 0 -2rem;
+    }
+
+ footer{
+      margin:0 1rem 0 -2rem;
   }
 
   nav a:hover::before {
     transform: scale(0,0);
   }
+
 
   .sidenav {
     height: 100%;
@@ -281,42 +337,3 @@ a:hover {
   }
 }
 
-/* Styling for Footer------------------------ */
-.flex-grid-footer {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 4rem 0 0 0;
-}
-
-.footer-col {
-  flex: 1;
-  padding: 0 1rem 0 3.5rem;
-}
-.footer-col p{
-  max-width:300px;
-}
-.footer-col submit button{
-}
-footer {
-  width: 100%;
-  position: absolute;
-  margin: auto;
-  padding: 3rem 0 0 0;
-  text-align: center;
-}
-
-footer p {
-  text-decoration: none;
-  font-size: 0.8em;
-}
-
-/*tylying for about page's content alignment */
-#about_page {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 40rem;
-}
-
-#about_page h3 {
-  text-align: center;
-}
