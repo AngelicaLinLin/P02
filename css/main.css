@@ -440,18 +440,15 @@ iframe {
   padding: 0 1rem 0 0;
 }
 .checkoutInfo {
-
   padding: 2rem;
   display:inline-block;
-
 }
-
 
 .payment-product {
   flex: 1;
-  margin: 2rem 3rem 0 2rem;
-
-
+  margin-top: 2rem;
+  padding: 2rem;
+  background-color: rgb(240, 248, 255);
 }
 
 .payment-form {
@@ -463,21 +460,23 @@ iframe {
 .payment-form input[type=text] {
   width: 100%;
 }
-.submit {
-  margin: 2rem 1rem 0 3rem;
-  display: inline-block;
+.checkout-content {
+  display: block;
 }
+.submit {
+  width: 120%;
+  margin: 2rem 1rem 0 0;
+}
+
+
 
 @media(max-width:829px) {
   .product-details .product-info {
     /*margin-right:1rem;*/
-
     max-width: 580%;
     position: static;
-
   }
   .section{
     margin:0 0 0 9rem;
   }
-
 }
