@@ -107,6 +107,7 @@ nav a:hover, nav a:focus {
 .container1 {
   flex:1;
   max-width: 1000px;
+
 }
 
 .container2 {
@@ -250,7 +251,7 @@ footer p {
   .col {
     flex: 0 0 15%;
     max-width: 220px;
-    
+
   }
 
  .main .product-details .product-images {
@@ -271,7 +272,10 @@ footer p {
 
   }
 
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
   .flex-grid-footer {
     margin:4rem 0 0 -2rem;
     }
@@ -337,4 +341,3 @@ footer p {
     padding-left: 0.5rem;
   }
 }
-
