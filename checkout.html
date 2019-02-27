@@ -1,3 +1,4 @@
+
 <!Doctype html>
 <html lang="en">
 <head>
@@ -8,11 +9,13 @@
   <!-- Page specific css -->
   <link href="css/main.css" rel="stylesheet" type="text/css">
   <link href="css/home.css" rel="stylesheet" type="text/css">
+  <!-- <link href="css/main1.css" rel="stylesheet" type="text/css"> -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 <body>
   <!-- navigation bar for switching between different pages, i.e. styleguide, product listing pages -->
+
   <div class="sidenav" id="mySidenav">
     <h1><a href="home.html"  id="logo">CON+FORT</a></h1>
 
@@ -58,11 +61,10 @@
                       </span>
                   </p>
 
-                  <p>
+                  <div class="submit">
                       <a class="submit-button" href="#">Add</a>
                       <a class="submit-button" href="#">Remove</a>
-
-                  </p>
+                  </div>
               </div>
 
 
@@ -90,12 +92,11 @@
                           </select>
                       </span>
                   </p>
-
-                  <p>
+                  <div class="submit">
                       <a class="submit-button" href="#">Add</a>
                       <a class="submit-button" href="#">Remove</a>
+                  </div>
 
-                  </p>
               </div>
 
           </div>
@@ -109,7 +110,7 @@
           <div>
               <div class="payment-product">
                   <form class="payment-form">
-                      <label for="email">Email</label>
+                      <label for="email" class="checkout-content">Email</label>
                       <input type="text" id="email" placeholder="Email">
                       <label for="first-name">First Name </label>
                       <input type="text" id="first-name" placeholder="First Name">
@@ -120,9 +121,7 @@
                       <label for="postal-code">Postal Code</label>
                       <input type="text" id="postal-code" placeholder="Postal Code">
                   </form>
-              </div>
 
-              <div class="payment-product">
                   <form class="payment-form">
                       <label for="card-number">Card Number</label>
                       <input type="text" id="card-number" placeholder="Card Number">
@@ -132,13 +131,13 @@
                       <input type="text" maxlength="4" size="4" id="CVV" placeholder="CVV">
                   </form>
 
-              </div>
+
 
               <div class="submit">
-                  <a class="submit-button" href="purchased.html">Submit</a>
+                  <a class="submit-button" href="#">Submit</a>
                   <a class="submit-button" href="#">Cancel</a>
               </div>
-
+             </div>
           </div>
       </div>
 
