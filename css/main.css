@@ -48,6 +48,12 @@ header #menu .trigger {
   display: none;
 }
 
+#video{
+
+    width: 50%;
+    height: 50%;
+
+}
 
 /** Product details */
 .product-details {
