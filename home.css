@@ -1,0 +1,401 @@
+@import "https://fonts.googleapis.com/css?family=Thasadith";
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Thasadith', sans-serif;
+  font-weight: bolder;
+  padding: 2rem;
+}
+
+#logo {
+  position: fixed;
+  text-decoration: none;
+  padding-top: 0.8rem;
+}
+
+h1, #logo{
+  margin-left: 2rem;
+  padding-left: 0.5rem;
+  font-weight: bold;
+  color: rgb(72,61,139);
+  /* position: fixed; */
+}
+
+h2 {
+  margin-top: 3rem;
+  color: rgb(205,92,92);
+  text-align: center;
+}
+
+h3 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: rgb(218,165,32);
+}
+
+h4 {
+  /* margin-bottom: 0.25rem; */
+  color: rgb(70, 130, 180);
+}
+
+h5 {
+  color: rgb(128,128,128);
+}
+
+/*Stylying for side navigation*/
+.sidenav {
+  height: 100%;
+  width: 18rem;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  padding-top: 2rem;
+}
+
+li {
+  list-style-type: none;
+}
+
+nav {
+  margin-top: 6rem;
+  margin-left: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+nav a {
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+  color: rgb(95, 158, 160);
+  text-decoration: none;
+  margin-right: 5rem;
+  font-weight: bold;
+  font-size: 1rem;
+  display: block;
+}
+
+nav a:hover, nav a:focus {
+  color: rgb(100,149,210);
+  text-decoration: underline;
+}
+
+.sidenav .icon {
+  display: none;
+}
+
+/*right side main part*/
+.main {
+  margin-left: 14rem; /* Same as the width of the sidenav */
+  font-size: 16px; /* Increased text to enable scrolling */
+  padding: 0rem 1rem;
+  padding-top: 2rem;
+  /* margin-right: 10rem; */
+  margin-right: auto;
+  max-width: 60rem;
+}
+
+
+.maincontainer {
+  flex-direction: column;
+  display: flex;
+
+}
+
+.container1 {
+  flex:1;
+  max-width: 1000px;
+  margin-top: 1rem;
+  /* margin-bottom: 1rem; */
+}
+
+.container2 {
+  flex:1;
+  display: flex;
+  max-width: 1000px;
+  margin-top: 1rem;
+}
+
+.small-img {
+  max-width: 100%;
+  flex:1;
+}
+
+.home-img-large {
+  /* flex:1 0 100%; */
+  max-width: 100%;
+
+}
+
+.containersmall {
+  flex: 1 0 30%;
+  position: relative;
+  display: inline;
+}
+
+.submit-button {
+  display: inline;
+  padding: 0.5rem;
+  color: white;
+  background-color: rgb(176, 196, 222);
+  text-decoration: none;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  width: 5rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+ .submit-button:hover, .submit-button:active {
+  background-color: rgb(173,216,230);
+  border-radius: 0.4rem;
+}
+
+.in-text-link, .col p {
+  color: #666;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* Styling for Footer------------------------ */
+.flex-grid-footer {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 3rem 1rem 0 13rem;
+}
+
+.footer-col {
+  flex: 1;
+  padding: 0 3.5rem 0 2rem;
+}
+
+.footer-col p {
+  width: 100%;
+}
+
+.footer-col submit button {
+}
+
+footer {
+  width: 100%;
+  position: absolute;
+  margin: auto;
+  padding: 3rem 0 0 0;
+  text-align: center;
+}
+
+footer p {
+  text-decoration: none;
+  font-size: 0.8em;
+}
+
+/*tylying for about page's content alignment */
+.text_page {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 40rem;
+}
+
+.text_page h3 {
+  text-align: center;
+}
+
+
+/* @media(max-width: 800px){
+.main{
+margin-left:14rem;
+margin-right:0rem;
+margin-top:0.5rem;
+}
+.footer-col {
+padding: 0 1rem 0 3.5rem;
+}
+} */
+
+
+
+@media only screen and (max-width: 35.563em) {
+  h1 {
+    margin-left: 0.5rem;
+  }
+  .small-img {
+    max-width: 100%;
+    height: auto;
+    flex:1;
+  }
+
+  .footer-bottom {
+    position: static;
+  }
+
+  .product-cart {
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .product-cart h2 {
+    margin-right: 1rem;
+  }
+
+  .payment-product {
+    flex: 1;
+    margin: 2rem 3rem 0 2rem;
+    width: 400px;
+  }
+
+  .submit {
+    margin: 2rem 1rem 0 4rem;
+  }
+
+  .col {
+    flex: 0 0 15%;
+    max-width: 220px;
+
+  }
+
+  .main .product-details .product-images {
+    margin: 0 0 0 -2rem;
+  }
+
+  .main .product-details .product-info {
+    margin:0 1rem 0 0 ;
+    max-width: 100%;
+    position: static;
+  }
+
+
+  .section{
+    margin:0 3rem 0 1rem;
+    max-width:300px;
+
+  }
+
+  .product {
+    width: 200px;
+    height: auto;
+    margin: 5px;
+  }
+
+  .flex-grid-footer {
+    margin:4rem 1rem 0 0;
+    max-width: 100%;
+    display: block;
+  }
+  .footer-col {
+    flex: 1;
+    padding: 0 1rem 0 2rem;
+  }
+
+  .footer-col p {
+    width: 110%;
+  }
+
+  footer{
+    margin:0 1rem 0 -2rem;
+  }
+
+  nav a:hover::before {
+    transform: scale(0,0);
+  }
+
+
+  .sidenav {
+    height: 100%;
+    width: 18rem;
+    position: relative;
+    padding-top: 0;
+  }
+
+  .main {
+    /* padding-left: 0; */
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom:0.5rem;
+    padding-top: 0;
+  }
+
+  #logo {
+    position: absolute;
+    text-align:justify;
+    width: 100%;
+    padding-top: 0;
+  }
+
+  /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+  .sidenav nav a {display: none;}
+  .sidenav a.icon {
+    /* float: left;
+    display: block; */
+    position:absolute;
+    left: 0rem;
+    top: 1.8rem;
+    display: block;
+    font-size: 1.5rem;
+  }
+
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  .sidenav.responsive {position: relative;}
+  .sidenav.responsive a.icon {
+    position:absolute;
+    left: 0rem;
+    top: 1.8rem;
+  }
+  .sidenav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  nav {
+    margin-left: 0rem;
+    margin-top: 4rem;
+    padding-left: 0.5rem;
+  }
+}
+
+/*Styling for purchased page */
+.image_purchased {
+  width: 150px;
+  height: auto;
+}
+.text_container {
+  flex: 1 0 50%;
+  position: relative;
+  display: inline;
+}
+.text_container p {
+  margin-top: 0;
+  margin-left: 5px;
+}
+.img_container {
+  flex: 1 0 50%;
+  position: relative;
+  display: inline;
+}
+#feedback {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  resize: none;
+}
+#feedback::placeholder {
+  text-align: left;
+  top:0;
+}
+
+
+/* #feedback input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+} */
