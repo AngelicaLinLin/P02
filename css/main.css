@@ -71,24 +71,25 @@ header #menu .trigger {
 }
 
 .product-details .product-images > li {
-  display: inline-block;
-  width: 100px;
-  height: product-dimenstions(64px);
-  overflow: hidden;
-  margin: 5px;
-  list-style: none;
-}
 
-.product-details .product-images > li {
-  width: 100%;
-  min-width: 200px height: auto;
+  width: 100px;
+  height:auto;
+  overflow: hidden;
   margin: 0;
   list-style: none;
   clear: both;
   position: relative;
-  -webkit-transition: left 2s;
-  -moz-transition: left 2s;
-  -o-transition: left 2s;
+  transition: left 2s;
+}
+
+.product-details .product-images > li {
+  width: 100%;
+  min-width: 200px;
+  height: auto;
+  margin: 0;
+  list-style: none;
+  clear: both;
+  position: relative;
   transition: left 2s;
 }
 
@@ -109,7 +110,6 @@ header #menu .trigger {
 
 
 }
-
 
 .product-details .product-info > li {
   margin: 10px 0;
@@ -157,7 +157,7 @@ header #menu .trigger {
 .product {
   display: block;
   width: 150px;
-  height: calc($value + $value * 0.1);
+  height: auto;
   margin: 5px;
   overflow: hidden;
   text-align: center;
@@ -375,6 +375,9 @@ COMBINED ELEMENTS -------------------
   padding: 1rem 20rem 0 20rem;
 }
 
+
+
+
 /*Styling the About Page*/
 .about-col {
   flex: 1;
@@ -425,7 +428,7 @@ iframe {
   padding: 0 1rem 0 0;
 }
 .checkoutInfo {
-  padding: 1rem;
+  padding: 2rem;
   display:inline-block;
 }
 

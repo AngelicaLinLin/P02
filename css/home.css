@@ -92,6 +92,7 @@ nav a:hover, nav a:focus {
   font-size: 16px; /* Increased text to enable scrolling */
   padding: 0rem 1rem;
   padding-top: 2rem;
+  /* margin-right: 10rem; */
   margin-right: auto;
   max-width: 60rem;
 }
@@ -100,12 +101,14 @@ nav a:hover, nav a:focus {
 .maincontainer {
   flex-direction: column;
   display: flex;
+
 }
 
 .container1 {
   flex:1;
   max-width: 1000px;
   margin-top: 1rem;
+  /* margin-bottom: 1rem; */
 }
 
 .container2 {
@@ -121,7 +124,9 @@ nav a:hover, nav a:focus {
 }
 
 .home-img-large {
+  /* flex:1 0 100%; */
   max-width: 100%;
+
 }
 
 .containersmall {
@@ -132,7 +137,7 @@ nav a:hover, nav a:focus {
 
 .submit-button {
   display: inline-block;
-  padding: 0.5rem;
+  padding: 0.3rem;
   color: white;
   background-color: rgb(176, 196, 222);
   text-decoration: none;
@@ -148,12 +153,16 @@ nav a:hover, nav a:focus {
   display: block;
   margin-top: 1rem;
 }
-.submit-button:hover, .submit-button:active {
+
+.comment-button {
+  margin-top: 1rem;
+}
+ .submit-button:hover, .submit-button:active {
   background-color: rgb(173,216,230);
   border-radius: 0.4rem;
 }
 
-.in-text-link, .col p {
+.in-text-link, .col p, .product-name, .product-price {
   color: #666;
   text-decoration: none;
 }
@@ -177,8 +186,11 @@ a:hover {
   width: 100%;
 }
 
+.footer-col submit button {
+}
+
 footer {
-  width: 95%;
+  width: 100%;
   position: absolute;
   margin: auto;
   padding: 3rem 0 0 0;
@@ -188,6 +200,10 @@ footer {
 footer p {
   text-decoration: none;
   font-size: 0.8em;
+}
+
+#email {
+  height: 1.8rem;
 }
 
 /*tylying for about page's content alignment */
@@ -200,20 +216,6 @@ footer p {
 .text_page h3 {
   text-align: center;
 }
-
-
-/* @media(max-width: 800px){
-.main{
-margin-left:14rem;
-margin-right:0rem;
-margin-top:0.5rem;
-}
-.footer-col {
-padding: 0 1rem 0 3.5rem;
-}
-} */
-
-
 
 @media only screen and (max-width: 35.563em) {
   h1 {
@@ -244,6 +246,10 @@ padding: 0 1rem 0 3.5rem;
     width: 400px;
   }
 
+  .submit {
+    margin: 2rem 1rem 0 4rem;
+  }
+
   .col {
     flex: 0 0 15%;
     max-width: 220px;
@@ -269,7 +275,7 @@ padding: 0 1rem 0 3.5rem;
 
   .product {
     width: 200px;
-    height: calc($value + $value * 0.1);
+    height: auto;
     margin: 5px;
   }
 
@@ -379,9 +385,10 @@ padding: 0 1rem 0 3.5rem;
   font-size: 16px;
   resize: none;
 }
+
 #feedback::placeholder {
   text-align: left;
-  up:0;
+  top:0;
 }
 
 #myVideo {
@@ -389,6 +396,7 @@ padding: 0 1rem 0 3.5rem;
   height: 100%;
   width: 100%;
 }
+
 /* #feedback input[type=text] {
   width: 100%;
   padding: 12px 20px;
