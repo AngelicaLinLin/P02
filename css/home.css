@@ -19,7 +19,6 @@ h1, #logo{
   padding-left: 0.5rem;
   font-weight: bold;
   color: rgb(72,61,139);
-  /* position: fixed; */
 }
 
 h2 {
@@ -35,7 +34,6 @@ h3 {
 }
 
 h4 {
-  /* margin-bottom: 0.25rem; */
   color: rgb(70, 130, 180);
 }
 
@@ -93,7 +91,7 @@ nav a:hover, nav a:focus {
 }
 
 #email {
-    height: 1.8rem;
+  height: 1.8rem;
 }
 
 /*right side main part*/
@@ -147,16 +145,16 @@ nav a:hover, nav a:focus {
 /* submit button for all */
 .submit-button {
   display: inline-block;
-  padding: 0.3rem;
+  padding: 0.2rem;
   color: white;
   background-color: rgb(176, 196, 222);
   text-decoration: none;
   transition-property: background-color;
   transition-duration: 0.5s;
-  width: 6rem;
+  width: 5.3rem;
   text-align: center;
   margin-bottom: 0.5rem;
-  margin-right: 0.5rem;
+  margin-right: 0.2rem;
 }
 /*style * submit button for subscribe */
 .subscribe-button {
@@ -168,7 +166,7 @@ nav a:hover, nav a:focus {
   margin-top: 1rem;
 }
 /*style* submit button for all */
- .submit-button:hover, .submit-button:active {
+.submit-button:hover, .submit-button:active {
   background-color: rgb(173,216,230);
   border-radius: 0.4rem;
 }
@@ -207,8 +205,6 @@ footer p {
   font-size: 0.8em;
 }
 
-
-
 /*tylying for about page's content alignment */
 .text_page {
   margin-left: auto;
@@ -221,34 +217,32 @@ footer p {
 }
 /*screen max width 50rem maincotainer changes */
 @media only screen and (max-width: 50rem) {
-
-
-    .maincontainer {
-        min-width: 100%;
-        display: block;
-        margin: 0 1rem 0 0;
-    }
+  .maincontainer {
+    min-width: 100%;
+    display: block;
+    margin: 0 1rem 0 0;
+  }
 }
+
 /*screen size 35.563rem style changes */
 @media only screen and (max-width: 35.563rem) {
   h1 {
     margin-left: 0.5rem;
   }
- /*small image changes size */
+  /*small image changes size */
   .small-img {
     max-width: 100%;
     height: auto;
     flex:1;
   }
- /*main container changes width */
+  /*main container changes width */
   .maincontainer {
     max-width: 90%;
     display: block;
     margin: 0 1rem 0 0;
-    }
+  }
 
-/* style in checkout page and payment infomation changes*/
-
+  /* style in checkout page and payment infomation changes*/
   .product-cart {
     margin-left: 2rem;
     margin-bottom: 1rem;
@@ -264,19 +258,12 @@ footer p {
     width: 400px;
   }
 
-.checkoutInfo {
-  padding-left: 0.5rem;
-  padding-top: 0.5rem;
-  padding-bottom: 1rem;
-  display:inline-block;
-}
-
   .col {
     flex: 0 0 15%;
     max-width: 220px;
 
   }
-/*produt details and product images change size */
+  /*produt details and product images change size */
   .main .product-details .product-images {
     margin: 0 0 0 -2rem;
   }
@@ -287,11 +274,9 @@ footer p {
     position: static;
   }
 
-
   .section{
     margin:0 3rem 0 1rem;
     max-width:300px;
-
   }
 
   .product {
@@ -299,7 +284,7 @@ footer p {
     height: auto;
     margin: 5px;
   }
- /*footer grid changes */
+  /*footer grid changes */
   .flex-grid-footer {
     margin:4rem 1rem 0 0;
     max-width: 100%;
@@ -313,14 +298,14 @@ footer p {
   .footer-col p {
     width: 100%;
   }
-/*footer position changes */
+  /*footer position changes */
   footer{
     margin:0 1rem 0 -2rem;
   }
- .footer-bottom {
+  .footer-bottom {
     position: static;
   }
-/*nav changes */
+  /*nav changes */
   nav a:hover::before {
     transform: scale(0,0);
   }
@@ -333,7 +318,6 @@ footer p {
   }
 
   .main {
-    /* padding-left: 0; */
     margin-left: 0;
     margin-right: 0;
     margin-bottom:0.5rem;
