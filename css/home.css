@@ -166,16 +166,16 @@ a:hover {
 .flex-grid-footer {
   display: flex;
   flex-wrap: wrap;
-  margin: 4rem 0 0 12rem;
+  margin: 3rem 1rem 0 13rem;
 }
 
 .footer-col {
   flex: 1;
-  padding: 0 1rem 0 3.5rem;
+  padding: 0 3.5rem 0 2rem;
 }
 
 .footer-col p {
-  max-width: 300px;
+  width: 100%;
 }
 
 .footer-col submit button {
@@ -282,7 +282,17 @@ padding: 0 1rem 0 3.5rem;
   }
 
   .flex-grid-footer {
-    margin:4rem 0 0 -2rem;
+    margin:4rem 1rem 0 0;
+    max-width: 100%;
+    display: block;
+  }
+  .footer-col {
+    flex: 1;
+    padding: 0 1rem 0 2rem;
+  }
+
+  .footer-col p {
+    width: 110%;
   }
 
   footer{
@@ -356,7 +366,6 @@ padding: 0 1rem 0 3.5rem;
   flex: 1 0 50%;
   position: relative;
   display: inline;
-  /* text-align: right; */
 }
 .text_container p {
   margin-top: 0;
@@ -367,3 +376,26 @@ padding: 0 1rem 0 3.5rem;
   position: relative;
   display: inline;
 }
+#feedback {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  resize: none;
+}
+#feedback::placeholder {
+  text-align: left;
+  up:0;
+}
+
+
+/* #feedback input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+} */
