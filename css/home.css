@@ -86,55 +86,59 @@ nav a:hover, nav a:focus {
   display: none;
 }
 
+#email {
+    height: 1.8rem;
+}
+
 /*right side main part*/
 .main {
   margin-left: 14rem; /* Same as the width of the sidenav */
   font-size: 16px; /* Increased text to enable scrolling */
   padding: 0rem 1rem;
   padding-top: 2rem;
-  /* margin-right: 10rem; */
   margin-right: auto;
   max-width: 60rem;
 }
 
-
+/*container for body content in home*/
 .maincontainer {
   flex-direction: column;
   display: flex;
+  margin: 0 0 0 4rem;
 
 }
-
+/*container for event image*/
 .container1 {
   flex:1;
   max-width: 1000px;
   margin-top: 1rem;
   /* margin-bottom: 1rem; */
 }
-
+/*container for more coats*/
 .container2 {
   flex:1;
   display: flex;
   max-width: 1000px;
   margin-top: 1rem;
 }
-
+/*flex the images width and resulted into 3 clickable small sections*/
 .small-img {
   max-width: 100%;
   flex:1;
 }
-
+/*flex the images width into one big section*/
 .home-img-large {
-  /* flex:1 0 100%; */
+ 
   max-width: 100%;
 
 }
-
+/*container for small images*/
 .containersmall {
   flex: 1 0 30%;
   position: relative;
   display: inline;
 }
-
+/* submit button for all */
 .submit-button {
   display: inline-block;
   padding: 0.3rem;
@@ -148,33 +152,31 @@ nav a:hover, nav a:focus {
   margin-bottom: 0.5rem;
   margin-right: 0.5rem;
 }
-
+/*style * submit button for subscribe */
 .subscribe-button {
   display: block;
   margin-top: 1rem;
 }
-
+/*style * submit button for comment */
 .comment-button {
   margin-top: 1rem;
 }
+/*style* submit button for all */
  .submit-button:hover, .submit-button:active {
   background-color: rgb(173,216,230);
   border-radius: 0.4rem;
 }
 
-.in-text-link, .col p, .product-name, .product-price {
-  color: #666;
-  text-decoration: none;
-}
+/*style* for links*/
 a:hover {
   text-decoration: underline;
 }
 
-/* Styling for Footer------------------------ */
+/* Style for Footer infomation------------------------ */
 .flex-grid-footer {
   display: flex;
   flex-wrap: wrap;
-  margin: 3rem 1rem 0 13rem;
+  margin: 4rem 0 0 15rem;
 }
 
 .footer-col {
@@ -183,14 +185,11 @@ a:hover {
 }
 
 .footer-col p {
-  width: 100%;
+  width: 110%;
 }
-
-.footer-col submit button {
-}
-
+/*Style for Footer */
 footer {
-  width: 100%;
+  width: 95%;
   position: absolute;
   margin: auto;
   padding: 3rem 0 0 0;
@@ -202,9 +201,7 @@ footer p {
   font-size: 0.8em;
 }
 
-#email {
-  height: 1.8rem;
-}
+
 
 /*tylying for about page's content alignment */
 .text_page {
@@ -216,20 +213,35 @@ footer p {
 .text_page h3 {
   text-align: center;
 }
+/*screen max width 50rem maincotainer changes */
+@media only screen and (max-width: 50rem) {
 
-@media only screen and (max-width: 35.563em) {
+
+    .maincontainer {
+        min-width: 100%;
+        display: block;
+        margin: 0 1rem 0 0;
+    }
+}
+/*screen size 35.563rem style changes */
+@media only screen and (max-width: 35.563rem) {
   h1 {
     margin-left: 0.5rem;
   }
+ /*small image changes size */
   .small-img {
     max-width: 100%;
     height: auto;
     flex:1;
   }
+ /*main container changes width */
+  .maincontainer {
+    max-width: 90%;
+    display: block;
+    margin: 0 1rem 0 0;
+    }
 
-  .footer-bottom {
-    position: static;
-  }
+/* style in checkout page and payment infomation changes*/
 
   .product-cart {
     margin-left: 2rem;
@@ -246,16 +258,19 @@ footer p {
     width: 400px;
   }
 
-  .submit {
-    margin: 2rem 1rem 0 4rem;
-  }
+.checkoutInfo {
+  padding-left: 0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+  display:inline-block;
+}
 
   .col {
     flex: 0 0 15%;
     max-width: 220px;
 
   }
-
+/*produt details and product images change size */
   .main .product-details .product-images {
     margin: 0 0 0 -2rem;
   }
@@ -278,7 +293,7 @@ footer p {
     height: auto;
     margin: 5px;
   }
-
+ /*footer grid changes */
   .flex-grid-footer {
     margin:4rem 1rem 0 0;
     max-width: 100%;
@@ -290,18 +305,20 @@ footer p {
   }
 
   .footer-col p {
-    width: 110%;
+    width: 100%;
   }
-
+/*footer position changes */
   footer{
     margin:0 1rem 0 -2rem;
   }
-
+ .footer-bottom {
+    position: static;
+  }
+/*nav changes */
   nav a:hover::before {
     transform: scale(0,0);
   }
-
-
+  
   .sidenav {
     height: 100%;
     width: 18rem;
@@ -374,6 +391,7 @@ footer p {
   position: relative;
   display: inline;
 }
+/*feedback style in confirmation page */
 #feedback {
   width: 100%;
   height: 150px;
@@ -390,16 +408,10 @@ footer p {
   text-align: left;
   top:0;
 }
-
+/*style for video */
 #myVideo {
   display: block;
   height: 100%;
   width: 100%;
 }
 
-/* #feedback input[type=text] {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  box-sizing: border-box;
-} */
