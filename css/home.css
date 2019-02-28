@@ -92,7 +92,6 @@ nav a:hover, nav a:focus {
   font-size: 16px; /* Increased text to enable scrolling */
   padding: 0rem 1rem;
   padding-top: 2rem;
-  /* margin-right: 10rem; */
   margin-right: auto;
   max-width: 60rem;
 }
@@ -101,14 +100,12 @@ nav a:hover, nav a:focus {
 .maincontainer {
   flex-direction: column;
   display: flex;
-
 }
 
 .container1 {
   flex:1;
   max-width: 1000px;
   margin-top: 1rem;
-  /* margin-bottom: 1rem; */
 }
 
 .container2 {
@@ -124,9 +121,7 @@ nav a:hover, nav a:focus {
 }
 
 .home-img-large {
-  /* flex:1 0 100%; */
   max-width: 100%;
-
 }
 
 .containersmall {
@@ -135,7 +130,7 @@ nav a:hover, nav a:focus {
   display: inline;
 }
 
-button, .submit-button {
+.submit-button {
   display: inline;
   padding: 0.5rem;
   color: white;
@@ -149,7 +144,7 @@ button, .submit-button {
   margin-right: 0.5rem;
 }
 
-button:hover, button:active, .submit-button:hover, .submit-button:active {
+.submit-button:hover, .submit-button:active {
   background-color: rgb(173,216,230);
   border-radius: 0.4rem;
 }
@@ -176,9 +171,6 @@ a:hover {
 
 .footer-col p {
   width: 100%;
-}
-
-.footer-col submit button {
 }
 
 footer {
@@ -246,10 +238,6 @@ padding: 0 1rem 0 3.5rem;
     flex: 1;
     margin: 2rem 3rem 0 2rem;
     width: 400px;
-  }
-
-  .submit {
-    margin: 2rem 1rem 0 4rem;
   }
 
   .col {
