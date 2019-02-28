@@ -375,21 +375,6 @@ COMBINED ELEMENTS -------------------
   padding: 1rem 20rem 0 20rem;
 }
 
-/* .submit-button-cart {
-  background-color: rgb(134,206,193);
-  display: inline-block;
-  text-decoration: none;
-  color: black;
-  padding: 0.5em 3em 0.5em 3em;
-  transition: background-color 0.3s ease-out;
-} */
-/*
-.submit-button-cart:hover, .submit-button-cart:focus {
-  text-decoration: none;
-  background-color: rgb(34,34,34);
-  color: rgb(255,255,255);
-} */
-
 /*Styling the About Page*/
 .about-col {
   flex: 1;
@@ -440,7 +425,7 @@ iframe {
   padding: 0 1rem 0 0;
 }
 .checkoutInfo {
-  padding: 2rem;
+  padding: 1rem;
   display:inline-block;
 }
 
