@@ -42,7 +42,7 @@ h5 {
 }
 
 /*Stylying fot in-text link*/
-p a:hover, p a:focus, #citations a:hover, #citations a:focus {
+p a:hover, p a:focus, #citations a:hover, #citations a:focus, li .product:hover, li .product:focus {
   color: rgb(0, 139, 139);
   text-decoration: underline;
 }
