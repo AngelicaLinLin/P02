@@ -16,12 +16,10 @@ body {
 .sidenav {
   height: 100%;
   width: 10rem;
-  /* position: fixed; */
   z-index: 1;
   top: 0;
   left: 0;
   overflow-x: hidden;
-  padding-top: 2rem;
 }
 
 .sidenav .icon {
@@ -43,12 +41,8 @@ body {
   /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
   .sidenav nav a {display: none;}
   .sidenav a.icon {
-    /* float: left;
-    display: block; */
-
     position:absolute;
-    /* left: 0rem; */
-    /* top: 1.8rem; */
+    left: 2rem;
     display: block;
     font-size: 1.5rem;
   }
@@ -58,7 +52,6 @@ body {
   .sidenav.responsive a.icon {
     position:absolute;
     left: 0rem;
-    /* top: 10rem; */
   }
   .sidenav.responsive a {
     float: none;
