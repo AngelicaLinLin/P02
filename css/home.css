@@ -45,7 +45,7 @@ h5 {
 p a:hover, p a:focus,#citations a:hover, #citations a:focus, li .product:hover, li .product:focus{
     color:rgb(0,139,139);
     text-decoration:underline;
-} 
+}
 p a, #citations, li, a{
     color:#2F4F4F;
 }
@@ -98,11 +98,10 @@ nav a:hover, nav a:focus {
 
 /*right side main part*/
 .main {
-  margin-left: 14rem; /* Same as the width of the sidenav */
+  padding-left: 12rem; /* Same as the width of the sidenav */
   font-size: 16px; /* Increased text to enable scrolling */
-  padding: 0rem 1rem;
   padding-top: 2rem;
-  margin-right: auto;
+  margin: auto;
   max-width: 60rem;
 }
 
@@ -120,7 +119,7 @@ nav a:hover, nav a:focus {
 
 /*container for body content in home*/
 .maincontainer {
-  flex-direction: column; 
+  flex-direction: column;
   display: flex;
   margin: 0 0 0 4rem;
 
@@ -285,7 +284,7 @@ footer p {
     margin-right: 1rem;
   }
 
- 
+
 
   .col {
     flex: 0 0 15%;
@@ -340,7 +339,7 @@ footer p {
   nav a:hover::before {
     transform: scale(0,0);
   }
-  
+
   .sidenav {
     height: 100%;
     width: 18rem;
@@ -430,4 +429,3 @@ footer p {
   text-align: left;
   top:0;
 }
-
