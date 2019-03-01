@@ -98,7 +98,7 @@ nav a:hover, nav a:focus {
 
 /*right side main part*/
 .main {
-  padding-left: 12rem; /* Same as the width of the sidenav */
+  padding-left: 13rem; /* Same as the width of the sidenav */
   font-size: 16px; /* Increased text to enable scrolling */
   padding-top: 2rem;
   margin: auto;
